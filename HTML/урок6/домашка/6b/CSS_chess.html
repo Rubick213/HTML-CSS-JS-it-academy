@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="content-type" content="text/html; charset=utf-8" /><title>*** unnamed text ***</title></head><body>
+<style>
+
+  table.CHESS
+  {
+    border-collapse: collapse;
+  }
+
+  table.CHESS td
+  {
+    width: 50px;
+    height: 50px;
+    border: solid gray 1px;
+  }
+/* ///////////////////////////////////// */
+  tr:nth-child(odd) td:nth-child(odd), tr:nth-child(even) td:nth-child(even){ /* нечетные строки с нечетными ячейками и наоборот*/
+    background-color: black;
+  }
+  /* ///////////////////////////////// */
+  tr td:first-child, tr td:last-child, tr:first-child td, tr:last-child td { /*все строки - первые ячейки и последнии ячейки, первая строка и последняя строка и все ячейки*/
+    background-color: rgb(14, 212, 14);
+    opacity: 0.5;
+    width: 20px;
+    height: 20px;
+  }
+  /* ///////////////////////////// */
+  tr:nth-child(odd) td:first-child, tr:nth-child(even) td:last-child,   /*нечетная строки и первая ячейка в строке || четная строки и полсденяя ячейка в строке*/
+  tr:first-child td:nth-child(odd), tr:last-child td:nth-child(even) {  /*первая строка и нечетные я чейки || послденяя строка и четные ячейки*/
+    background-color: rgb(14, 212, 14); 
+  }
+ 
+
+</style>
+
+<table class='CHESS'>
+<tr class="bg">
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+</table>
+
+</body></html>

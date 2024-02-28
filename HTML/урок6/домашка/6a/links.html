@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+</head>
+<body>
+    <style>
+        .menu_one, .menu_two{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .menu_one > a{
+            border-left: 4px solid red;
+            padding: 10px;
+            display: inline-block;
+            font-size: 20px;
+        }
+        a:first-child {
+            border: none;
+        }
+        .menu_one a:hover, .menu_two a:hover, .menu_table a:hover, .menu_float a:hover, .menu_list a:hover{
+            color: red;
+        }
+        
+        /* var2 */
+        .menu_two a {
+            padding: 10px;
+            font-size: 20px;
+            border-left: 4px solid red;
+            
+        }
+        a:first-child {
+            border: none;
+        }
+        /* var3 */
+        table {
+            margin: 0 auto 20px auto;
+            font-size: 20px;
+            
+        }
+        table td {
+            padding: 11px;
+            border-left:4px solid red ;
+        }
+        td:first-child {
+            border: none;
+        }
+        /* var4 */
+        .menu_float {
+            overflow: hidden;
+        }
+        .menu_float .block_menu {
+            border: none;
+            float: none;
+            padding: 0;
+            margin-left: 26%;
+            
+        }
+        .menu_float div{
+            border-left: 4px solid red;
+            font-size: 20px;
+            float: left;
+            padding: 15px 10px;
+        }
+        .block_menu :first-child{
+            border: none;
+        }
+        /* var5 */
+        .menu_list {
+            text-align: center;
+        }
+        li {
+            border-right: 4px solid red;
+            font-size: 20px;
+            list-style-type: none;
+            display: inline-block;
+            padding: 10px;
+        }
+        li:last-child {
+            border: none;
+        }
+    </style>
+    <!-- VARIANT_1(тут я применил дисплей inline-block что бы строчный тег преобразовался
+         в блочный но в одну строку так как если нам нужно мы можем изменить высоту и ширину.
+          Тут я рименил левую границу для разделителя border-left а также отменил этот стиль у
+            первого тега в блоке с помощью псевдокласса first child. 
+            А еще в строчные теги нельзя вкладывать блочные элементы ) -->
+    <div class="menu_one">
+        <a href="#">первая ссылка</a>
+        <a href="#">вторая ссылка</a>
+        <a href="#">третья ссылка</a>
+        <a href="#">четветая ссылка</a>
+        <a href="#">пятая ссылка</a>
+    </div>
+    <!-- VARIANT_2 (тут просто строчные элементы, в этом способе
+        если применить блоку div стиль border а тегу "a" padding то рамки тега "a"
+        выйдут за пределы границы блока)-->
+    <div class="menu_two">
+        <a href="">первая ссылка</a>
+        <a href="">вторая ссылка</a>
+        <a href="">третья ссылка</a>
+        <a href="">четветая ссылка</a>
+        <a href="">пятая ссылка</a>
+    </div>
+    <!-- VARIANT_3 (этот способ я сделал с помощью таблицы.Ячейкам добавил border-left и
+        отменил стиль в первой ячейки.Этот способ хорош тем если меняеться размер экрана то меню никуда не убегает.
+         )-->
+    <div class="menu_table">
+        <table>
+            <tr>
+                <td><a href="">первая ссылка</a></td>
+                <td><a href="">вторая ссылка</a></td>
+                <td><a href="">третья ссылка</a></td>
+                <td><a href="">четветая ссылка</a></td>
+                <td><a href="">пятая ссылка</a></td>
+            </tr>     
+        </table>
+    </div>
+    <!-- VARIANT_4-->
+    <div class="menu_float">     
+        <div class="block_menu">
+            <div><a href="">первая ссылка</a></div>
+            <div><a href="">вторая ссылка</a></div>
+            <div><a href="">третья ссылка</a></div>
+            <div><a href="">четветая ссылка</a></div>
+            <div><a href="">пятая ссылка</a></div>
+        </div>  
+    </div>
+    <!-- VARIANT5 -->
+    <div class="menu_list">
+        <ul>
+            <li><a href="">первая ссылка</a></li>
+            <li><a href="">вторая ссылка</a></li>
+            <li><a href="">третья ссылка</a></li>
+            <li><a href="">четветая ссылка</a></li>
+            <li><a href="">пятая ссылка</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>
