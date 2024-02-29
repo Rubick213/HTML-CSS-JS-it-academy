@@ -8,12 +8,19 @@
 </head>
 <body>
     <style>
+        .block {
+            transform: rotate(180deg);/*тут я по вашему совету развернул блок на 180 градусов*/
+            float: left;/*так как у меня был контейнер с право, я не хотел марджинами его двигать и просто его переместил флоат-лево,
+            единственное что нужно отменять следующим тегам этот стиль*/
+        }
        div.star {
         display: inline-block;
         background: url('../../../../img/star0.png') no-repeat 13px 9px;
         width: 100px;
         height: 100px;
         margin: -4px;
+        transform: scaleY(-1); /*так как я развернул блок на 180 они были вверх ноги, и я развернул сами блоки со звездами в правильное положение*/
+        
        }
        .star:hover, .star:hover~.star{
         background-image: url('../../../../img/star1.png');

@@ -14,15 +14,12 @@
             margin-left: -40px;
         }
         ul li {
-            display: inline;
+            display: inline-block;
             border-left: 3px solid red;
             padding: 10px;
         }
         li:first-child {
             border: none;
-        }
-        li a {
-            display: inline-block;
         }
         /* ////////////////////////////////////////////// */
         /* variant table */
@@ -50,17 +47,19 @@
         }
         /* //////////////////////////////////////////// */
         /* variant blok */
+        /* в этом варианте я могу применять стили к строчному тегу ,так как я его сделал блочным,
+        и получаеться что он занимает весь блок */
         .blok {
             clear: both;
             margin-top: 20px;
         }
         .blok div {
-            display: inline;
+            display: inline-block;
             border-left: 3px solid red;
             padding: 10px 5px;
         }
         .blok_link a {
-            display: inline-block;
+            display: block;
         }
         .blok_link:first-child{
             border: none;
