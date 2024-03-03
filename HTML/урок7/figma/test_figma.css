@@ -74,7 +74,7 @@ body {
 }
 .content .content_conteiner{
     margin: 0 auto;
-    /* border: 3px solid green; */
+    border: 3px solid green;
     width: 1245px;
     height: 555px;
     display: flex;
@@ -195,4 +195,58 @@ body {
     font-family: "Cormorant SC", serif;
     margin-left: 19px;
     margin-top: 20px;
+}
+/* //////////////////////////////////////////////////// */
+.item{
+    border: 2px solid green;
+    width: 1185px;
+    height: 571px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.item h2{
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 700;
+    color: white;
+    font-family: "Cormorant Garamond", serif;
+    /* margin-left: 30px; */
+    margin-top: 0;
+}
+.item .item_img{
+    border: 1px solid green;
+    display: inline-block;
+}
+.item .item_img div{
+    display: inline-block;
+}
+.item .item_img .bg_item_block1{
+    border: 1px solid yellow;
+    padding: 10px;
+    width: 100px;
+    height: 115px;
+    background: url(../../../img/item1.png) no-repeat;
+    background-position: 11px 10px;
+}
+.item .item_img .bg_item_block2{
+    width: 170px;
+    height: 150px;
+    background: url('../../../img/item2.png') no-repeat;
+    background-position: 11px 9px;
+    padding: 10px;
+    border: 1px solid yellow;
+}
+.item .item_img .bg_item_block3{
+    width: 423px;
+    height: 150px;
+    background: url('../../../img/item4.png') no-repeat;
+    background-position: 10px 9px;
+    padding: 10px;
+    border: 1px solid yellow;
+}
+/* //////text_item//////// */
+.item .item_text {
+    border: 1px solid yellow;
+    width: 255px;
+    height: 493px;
 }
