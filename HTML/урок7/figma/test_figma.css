@@ -68,3 +68,131 @@ body {
     color: #BAE249;
     text-decoration: none;
 }
+/* ///////////////////////////////////////////// */
+.content {
+    background:#1D2F30;
+}
+.content .content_conteiner{
+    margin: 0 auto;
+    /* border: 3px solid green; */
+    width: 1245px;
+    height: 555px;
+    display: flex;
+    /* align-items:center; */
+}
+.content .content_conteiner .plant {
+    margin: 0 auto;
+    border: 1px solid #0B1919;
+    width: 255px;
+    height: 493px;
+}
+.content .content_conteiner .plant .block_footer_1{
+    height: 180px;
+    background: url('../../../img/fig1.png') no-repeat center center;
+    background-color: #0B1919;
+    border: 1px solid rgba(255, 255, 0, 0);
+    
+}
+.content .content_conteiner .plant  .block_footer_1_img {
+    width: 27px;
+    height: 27px;
+    color: grey;
+    font-size: 16px;
+    text-align: center;
+    background: url('../../../img/Ellipse\ 1.png') no-repeat;
+    background-position: 1px 0px;
+    font-family: "Cormorant SC", serif;
+    margin-left: 19px;
+    margin-top: 20px;    
+}
+.content .content_conteiner .plant .block_header{
+    font-size: 24px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    color: white;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.content .content_conteiner .plant .block_text{
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 400;
+    color: gray;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.content .content_conteiner .plant .block_link{
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px 0;
+    text-align: center;
+    border: 2px solid  #BAE249;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 20px;;
+
+}
+.content .content_conteiner .plant .block_link a{
+    padding: 10px 20px;
+    color: #BAE249;
+    text-decoration: none;
+}
+    /* ////////////BLOCK2///////////// */
+.content .content_conteiner .plant .block_footer_2{
+    height: 180px;
+    background: url('../../../img/fig\ 2.png') no-repeat center center;
+    background-color: #0B1919;
+    border: 1px solid rgba(255, 255, 0, 0);
+}
+.content .content_conteiner .plant  .block_footer_2_img{
+    width: 27px;
+    height: 27px;
+    color: grey;
+    font-size: 16px;
+    text-align: center;
+    background: url('../../../img/Ellipse\ 1.png') no-repeat;
+    background-position: 2px 0px;
+    font-family: "Cormorant SC", serif;
+    margin-left: 19px;
+    margin-top: 20px;
+}
+/* /////////BLOCK3////////// */
+.content .content_conteiner .plant .block_footer_3{
+    height: 180px;
+    background: url('../../../img/fig_4.png') no-repeat center center;
+    background-color: #0B1919;
+    border: 1px solid rgba(255, 255, 0, 0);
+}
+.content .content_conteiner .plant  .block_footer_3_img{
+    width: 27px;
+    height: 27px;
+    color: grey;
+    font-size: 16px;
+    text-align: center;
+    background: url('../../../img/Ellipse\ 1.png') no-repeat;
+    background-position: 2px 0px;
+    font-family: "Cormorant SC", serif;
+    margin-left: 19px;
+    margin-top: 20px;
+}
+/* ////////BLOCK4//////// */
+.content .content_conteiner .plant .block_footer_4{
+    height: 180px;
+    background: url('../../../img/fig44.png') no-repeat center center;
+    background-color: #0B1919;
+    border: 1px solid rgba(255, 255, 0, 0);
+}
+.content .content_conteiner .plant  .block_footer_4_img{
+    width: 27px;
+    height: 27px;
+    color: grey;
+    font-size: 16px;
+    text-align: center;
+    background: url('../../../img/Ellipse\ 1.png') no-repeat;
+    background-position: 2px 0px;
+    font-family: "Cormorant SC", serif;
+    margin-left: 19px;
+    margin-top: 20px;
+}
