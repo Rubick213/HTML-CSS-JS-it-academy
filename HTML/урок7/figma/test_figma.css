@@ -461,11 +461,9 @@ body {
 .podval .podval_input a{
     color: #0B1919;
     text-decoration: none;
-    padding: ;
     display: inline-block;
     background-color: #BAE249;
 }
 .podval .podval_input label input{
-    display: block;
-    
+    display: block;  
 }
