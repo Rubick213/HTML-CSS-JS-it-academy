@@ -200,7 +200,7 @@ body {
 .item{
     /* border: 2px solid green; */
     width: 1185px;
-    height: 605px;
+    height: 620px;
     margin: 0 auto;
     padding: 0 30px;
 }
@@ -422,4 +422,50 @@ body {
     font-weight: 700;
     text-decoration: none;
     color: #1D2F30;
+}
+/* /////////podval////////////////////// */
+
+.podval {
+    position: relative;
+    border: 3px solid seagreen;
+    height: 463px;
+    background: url('../../../img/41.png') no-repeat 0px -5px;
+    background-size: cover;
+}
+.podval .block_podval{
+    border: 2px solid black;
+    height: inherit;
+    background-color: #1D2F30;
+    opacity: 0.5;
+}
+.podval .podval_input{
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 825px;
+}
+.podval .podval_input h2{
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 48px;
+    color: white;
+}
+.podval .podval_input p{
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+}
+.podval .podval_input a{
+    color: #0B1919;
+    text-decoration: none;
+    padding: ;
+    display: inline-block;
+    background-color: #BAE249;
+}
+.podval .podval_input label input{
+    display: block;
+    
 }
