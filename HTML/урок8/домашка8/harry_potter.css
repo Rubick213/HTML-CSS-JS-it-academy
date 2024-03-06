@@ -21,7 +21,11 @@
     word-spacing: 0.2em;
     letter-spacing: 0.1em;
 }
+.link_book a {
+    display: block;
+}
 .link_book div{
+    margin-bottom: 20px;
     text-align: center;
 }
 .menu_conteiner{
@@ -60,3 +64,38 @@
 .book5 p{
     padding-top: 40px;
 }
+
+.content_book{
+    text-indent: 0;
+    overflow: hidden;
+    margin-left: 190px;
+}
+.content_book_one {
+    background-color: #EFDCC5; 
+    margin-bottom: 20px; 
+    padding: 10px;
+}
+.content_book_one img, .content_book_two img, .content_book_three img{
+    float: left;
+    margin-right: 10px;
+}
+.content_book_two {
+    background-color: #F0A5B6; 
+    margin-bottom: 20px; 
+    padding: 10px;
+    clear: both; 
+}
+/* .content_book_two img{
+    float: left; 
+    margin-right: 10px;
+} */
+.content_book_three {
+    background-color: #BAB7B3; 
+    margin-bottom: 20px; 
+    padding: 10px;
+    clear: left;
+}
+/* .content_book_three img{
+    float: left;
+    margin-right: 10px;
+} */
