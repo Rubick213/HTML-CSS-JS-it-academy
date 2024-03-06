@@ -1,0 +1,62 @@
+.glav_conteiner {
+    font-size: 80%;
+    text-indent: 2em;
+}
+.header{
+    font: normal 1.2em 'Lobster', 'sans-serif';
+}
+.header h1 {
+    text-align: center;
+}
+.content{
+    font: normal 500 1.5em/1em 'Caveat', 'cursive';
+    font-optical-sizing: auto;
+}
+.content .content_info{
+    font-weight: bold;
+}
+.link_book {
+    font: normal 600 1em/1.2em 'Bad Script', 'cursive';
+    text-indent: 0;
+    word-spacing: 0.2em;
+    letter-spacing: 0.1em;
+}
+.link_book div{
+    text-align: center;
+}
+.menu_conteiner{
+    width: 90%;
+}
+.menu_left_bar{
+    text-indent: 0;
+    width: 190px; 
+    float: left;
+    padding: 0 10px; 
+    font: 15px sans-serif;
+}
+.menu_left_container ol{
+    text-transform: uppercase;
+}
+.menu_left_container h1{
+    text-align: center;
+}
+.menu_book{
+    text-transform: capitalize;
+}
+.menu_book img {
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+.book1 p, .book2 p{
+    padding-top: 50px;
+}
+.book2, .book3, .book4, .book5  {
+    clear: both;
+}
+.book3 p, .book4 p{
+    padding-top: 20px;
+}
+.book5 p{
+    padding-top: 40px;
+}
