@@ -58,6 +58,9 @@
 .book2, .book3, .book4, .book5  {
     clear: both;
 }
+.book6{
+    display: none;
+}
 .book3 p, .book4 p{
     padding-top: 20px;
 }

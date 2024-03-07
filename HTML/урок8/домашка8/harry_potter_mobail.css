@@ -10,12 +10,12 @@
    } 
    .menu_conteiner{
       width: 100%;
-      border: 1px solid red;
+      /* border: 1px solid red; */
       clear: both;
    }
    .menu_left_bar{
       float: none;
-      border: 1px solid black;
+      /* border: 1px solid black; */
       display: block;
       width: auto;
       padding: 0;
@@ -36,7 +36,57 @@
       text-decoration: none;
    }
    .menu_book{
-
+      width: 100%;
+      overflow: hidden;
+   }
+   .menu_book img{
+      display: none;
+   }
+   .menu_book p{
+      margin-top: 20px;
+      padding: 0 0;
+      font-size: 20px;
+      font-weight: 700;
+      text-align: center;
+   }
+   .book1, .book2, .book3, .book4, .book5, .book6{
+      clear: none;
+      float: left;
+      width: 50%;
+      overflow: hidden;
+      /* padding: 110px 0; */
+      height: 220px;
+   }
+   .book1 {
+      background: url('../../../img/Lord_Voldemort.webp') no-repeat;
+      background-size: cover;
+      color: white;
+   }
+   .book2 {
+      background: url('../../../img/potter-1-photo.jpg') no-repeat;
+      background-size: cover;
+      color: white;  
+   }
+   .book3 {
+      background: url('../../../img/Dambldor.jpg') no-repeat;
+      background-size: cover;
+      color: white;
+   }
+   .book4 {
+      background: url('../../../img/Grin-de-Vald.webp') no-repeat;
+      background-size: cover;
+      color: white;
+   }
+   .book5 {
+      background: url('../../../img/severus-snegg.jpg') no-repeat;
+      background-size: cover;
+      color: white;
+   }
+   .book6{
+      display: block;
+      background: url('../../../img/Hagrid.jpg') no-repeat -21px 0px;
+      background-size: cover;
+      color: white;
    }
    .content_book{
       margin: 0px;
