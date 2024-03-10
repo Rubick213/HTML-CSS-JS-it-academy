@@ -13,6 +13,15 @@
       display: block;
       height: 0;
    }
+   .one:link, .two:link, .three:link{
+      color: black;
+   }
+   .one:visited, .two:visited, .three:visited{
+      color: black;
+   }
+   .one, .two, .three{
+      text-decoration: none;
+   }
    .link_book{
       border-bottom: 1px solid #9a9a9a;
    }
@@ -33,11 +42,15 @@
       width: 100%;
       /* border: 1px solid red; */
       clear: both;
+      display: flex;
+      flex-flow: wrap;
    }
    .menu_left_bar{
+      order: 2;
       float: none;
       /* border: 1px solid black; */
       display: block;
+      background-color: #BAB7B3;
       width: auto;
       padding: 0;
       overflow: hidden;
@@ -61,6 +74,12 @@
    }
    ol li a{
       text-decoration: none;
+   }
+   ol li a:link{
+      color: black;
+   }
+   ol li a:visited{
+      color: black;
    }
    .menu_book{
       width: 100%;
@@ -87,41 +106,42 @@
    .book1 {
       background: url('../../../img/Lord_Voldemort.webp') no-repeat;
       background-size: cover;
-      color: #EFDCC5;
+      color: #BAB7B3;
       text-shadow: 2px 2px 1px black;
    }
    .book2 {
       background: url('../../../img/potter-1-photo.jpg') no-repeat;
       background-size: cover;
-      color: #EFDCC5;
+      color: #BAB7B3;
       text-shadow: 2px 2px 1px black;  
    }
    .book3 {
       background: url('../../../img/Dambldor.jpg') no-repeat;
       background-size: cover;
-      color: #EFDCC5;
+      color: #BAB7B3;
       text-shadow: 2px 2px 1px black;
    }
    .book4 {
       background: url('../../../img/Grin-de-Vald.webp') no-repeat;
       background-size: cover;
-      color: #EFDCC5;
+      color: #BAB7B3;
       text-shadow: 2px 2px 1px black;
    }
    .book5 {
       background: url('../../../img/severus-snegg.jpg') no-repeat;
       background-size: cover;
-      color: #EFDCC5;
+      color: #BAB7B3;
       text-shadow: 2px 2px 1px black;
    }
    .book6{
       display: block;
       background: url('../../../img/Hagrid.jpg') no-repeat -21px 0px;
       background-size: cover;
-      color: #EFDCC5;
+      color: #BAB7B3;
       text-shadow: 2px 2px 1px black;
    }
    .content_book{
+      order: 1;
       margin: 0px;
       /* border: 1px solid green; */
    }
@@ -132,4 +152,5 @@
    .content_book_one p, .content_book_two p, .content_book_three p{
       margin: 0;
    }
+   
 }
