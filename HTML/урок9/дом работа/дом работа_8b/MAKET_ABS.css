@@ -17,7 +17,6 @@ p{
 
 }
 .content_img img {
-    display: inline-block;
     width: 200px;
     height: 200px;
     transition: 0.5s;  
