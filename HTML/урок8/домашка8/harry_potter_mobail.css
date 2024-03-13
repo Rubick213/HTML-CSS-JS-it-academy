@@ -6,8 +6,11 @@
       /* background-image: url('../../../img/bg_list.jpg'); */
       
    }
+   .header h1{
+      font-size: 1.5em;
+   }
    .header h1 img {
-      width: 150px;
+      width: 170px;
       height: auto;
    }
    .link_book::after{

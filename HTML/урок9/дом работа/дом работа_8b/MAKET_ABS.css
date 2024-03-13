@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+    padding: 0 0;
+    box-sizing: border-box;
+}
+
+p{
+    text-align: justify;
+    padding: 0 5px;
+}
+
+.content_img {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+
+}
+.content_img img {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    transition: 0.5s;  
+}
+
+.img_no_smoking{
+    position: absolute;
+    top: 9.5em;
+    left: 9.5em;
+}
+.img_toxic{
+    position: absolute;
+    top: 2.9em;
+    left: 3.2em;
+}
+.img_man-and-woman{
+    position: absolute;
+    top: 2.9em;
+    left: 15.7em;
+}
+.yin_and_Yang{
+    position: absolute;
+    top: 15.5em;
+    left: 9.5em;
+}
+
+.img_no_smoking:hover, .img_toxic:hover, .img_man-and-woman:hover, .yin_and_Yang:hover{
+    z-index: 2;
+    width: 230px;
+    height: 230px;      
+}
+
+
+/* .img_no_smoking:hover {
+    position: absolute;
+    top: 9.5em;
+    left: 9.5em;
+}
+.img_toxic{
+    position: absolute;
+    top: 2.9em;
+    left: 3.2em;
+}
+.img_man-and-woman{
+    position: absolute;
+    top: 2.9em;
+    left: 15.7em;
+}
+.yin_and_Yang{
+    position: absolute;
+    top: 15.5em;
+    left: 9.5em;
+} */
