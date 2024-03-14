@@ -33,9 +33,8 @@
 .block_radio div{
     display: inline-block;
 }
-.block_radio div input{
+.block_radio div input{           /*лесенка*/
     float: left;
-    vertical-align: bottom;
 }
 .block_radio div label{
     margin-right: 10px;

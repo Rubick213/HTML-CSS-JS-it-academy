@@ -10,9 +10,12 @@
         width: 100%;
         margin-left: 0;
     }
-    
     .block_radio div{
         display: block;
+    }
+    .block_radio div input{
+        float: none;
+        vertical-align: middle;
     }
     .block_radio div input{
         margin-left: 0;
