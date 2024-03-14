@@ -1,0 +1,59 @@
+.conteiner{
+    width: 99%;
+    margin: 0 auto;
+}
+.block_articl,
+.block_select,
+.block_radio,
+.block_chek,
+.block_text{
+    padding-bottom: 10px;
+}
+.block_articl label,
+.block_select label,
+.block_radio>label{
+    display: block;
+    width: 30%;
+    float: left;
+}
+.block_articl input{
+    display: block;
+    width: 70%;
+    margin-left: 30%;
+    box-sizing: border-box;
+}
+/* ////////////block_select/////////////// */
+.block_select select{
+    display: block;
+    width: 35%;
+    margin-left: 30%;
+    box-sizing: border-box;
+}
+/* ///////////block_radio///////////// */
+.block_radio div{
+    display: inline-block;
+}
+.block_radio div input{
+    float: left;
+    vertical-align: bottom;
+}
+.block_radio div label{
+    margin-right: 10px;
+}
+/* /////////block_chek////////// */
+#chek{
+    vertical-align: middle;
+}
+/* ///////////////block_text//////////////// */
+.block_text label{
+    display: block;
+}
+textarea{
+    width: 100%;
+    box-sizing: border-box;
+}
+/* //////////btn////////////// */
+.btn input{
+    padding: 10px 15px;
+}
+
