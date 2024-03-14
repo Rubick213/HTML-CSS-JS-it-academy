@@ -1,3 +1,62 @@
 @media all and (max-width: 600px){
-    
+    .conteiner {
+        /* background-color: aqua; */
+        width: 99%;
+        margin: 0 auto;
+    }
+    .block_articl{    
+        /* background-color:blueviolet; */
+        padding-bottom: 10px;    
+    }
+    .block_articl label{
+        display: block;
+    }
+    .block_articl input{
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        /* border: 1px solid black; */
+    }
+    /* ////////class select///////// */
+    .block_select{
+        /* background-color: rgb(75, 180, 59); */
+        padding-bottom: 10px;
+    }
+    .block_select label{ /* можно связать*/
+        display: block;
+    }
+    .block_select select{
+        display: block;
+        width: 100%;
+    }
+    /* ////////// class block_radio //////////// */
+    .block_radio{
+        padding-bottom: 10px;
+        /* background-color: rgba(0, 0, 255, 0.5); */
+    }
+    .one_radio input{
+        vertical-align: middle;
+    }
+    /* //////////////class block_chek/////////////// */
+    .block_chek{
+        /* background-color: bisque; */
+        padding-bottom: 10px;
+    }
+    #chek{
+        vertical-align: middle;
+    }
+    /* /////////////// class block_text//////////// */
+    .block_text{
+        /* background-color: brown; */
+        padding-bottom: 10px;
+    }
+    textarea{
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    /* /////////sumbit////// */
+    .btn input{
+        padding: 10px 15px;
+    }
 }

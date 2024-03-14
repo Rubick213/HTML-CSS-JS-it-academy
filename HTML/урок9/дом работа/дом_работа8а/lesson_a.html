@@ -1,13 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="lesson_a.css">
-    <link rel="stylesheet" href="lesson_a_mob.css" media="screen, all">
-    <title>Lesson_A</title>
-</head>
-<body>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="lesson_a.css">
+        <link rel="stylesheet" href="lesson_a_mob.css" media="screen, all">
+        <title>Lesson_A</title>
+    </head>
+    <body>
+        <div class="conteiner">
+            <div>
+                <p>Для публикации вашей статьи заполните, пожалуйста, следующую форму:</p>
+            </div>
+
+            <form action="#" method="get">
+                <div class="block_articl">
+                    <label for="articl">Название статьи:</label>
+                    <input id="articl" type="text" name="name_article" spellcheck="true">
+                </div>
+                
+                <div class="block_select">
+                    <label for="my_select">Рубрика:</label>
+                    <select id="my_select" name="rubric">
+                        <option value="computer">компьютерная технника</option>
+                        <option value="graphics">графика и дизайн</option>
+                        <option value="programm">программирование</option>
+                    </select>
+                </div>
+
+                <div class="block_radio">
+                    <label>Публикация:</label>
+                    <div class="one_radio">
+                        <input id="site" type="radio" name="public" value="site">
+                        <label for="site">на сайте</label>
+                    </div>
+                    <div>
+                        <input id="journal" type="radio" name="public" value="journal">
+                        <label for="journal">в журнале</label>
+                    </div>
+                    <div>
+                        <input id="web_and_mag" type="radio" name="public" value="website_and_magazine">
+                        <label for="web_and_mag">на сайте и в журнале</label>
+                    </div>
+                </div>
+
+                <div class="block_chek">
+                    <label for="chek">Разрешить комментарии:</label>
+                    <input id="chek" type="checkbox" name="check" checked>
+                </div>
+
+                <div class="block_text">
+                    <label for="coment">Текст статьи:</label>
+                    <textarea id="coment" name="coment"></textarea>
+                </div>
+
+                <div class="btn">
+                    <input type="submit" value="опубликовать">
+                </div>
+            </form>
+        </div>
+    </body>
 </html>
