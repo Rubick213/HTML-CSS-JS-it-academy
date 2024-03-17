@@ -1,0 +1,38 @@
+svg{
+    overflow: visible;
+}
+#svg_2:hover, #svg_3:hover, #svg_4:hover{
+    fill-opacity: 100%;
+    stroke-dashoffset: 0;
+}
+#svg_2, #svg_3, #svg_4{
+    transition: all .7s ease-in-out;
+    stroke-width: 5;
+    stroke-dasharray: 1000 ;
+    stroke-dashoffset: 1000;
+}
+
+
+#svg_1{
+    transition: all 2s ease-in-out;
+}
+#svg_1~#l2{
+    display: none;
+}
+#svg_1:hover~#l2{
+    display: block;
+}
+
+
+
+#svg_2{
+    stroke: #00ff00;
+}
+#svg_3{
+    stroke: yellow;
+}
+#svg_4{
+    stroke: red;
+}
+
+
