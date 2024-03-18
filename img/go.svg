@@ -1,0 +1,15 @@
+<svg width="210.00000000000003" height="1500" xmlns="http://www.w3.org/2000/svg">
+ <g id="Layer_1">
+  <title>Layer 1</title>
+  <rect fill="#191919" x="7" y="12" width="196" height="584.99999" id="svg_1" stroke="#000"/>
+  <ellipse fill="#00ff00" stroke="#000" cx="104.00001" cy="114" id="svg_2" rx="95" ry="95" fill-opacity="0.25" stroke-width="0"/>
+  <ellipse fill="#ffff00" stroke="#000" cx="105.00001" cy="304" id="svg_3" rx="95" ry="95" fill-opacity="0.25" stroke-width="0"/>
+  <ellipse fill="#ff0000" stroke="#000" cx="105.00001" cy="495" id="svg_4" rx="95" ry="95" fill-opacity="0.25" stroke-width="0"/>
+  <rect fill="#161616" stroke="#000" x="95" y="597" width="20" height="440.99999" id="svg_6"/>
+  <rect fill="#ff0000" stroke="#000" fill-opacity="0.25" x="488.99998" y="686.80003" width="1" height="1" id="svg_7"/>
+  <rect fill="#00ff00" stroke="#000" x="5.5" y="678.80003" width="199" height="83" id="svg_8" stroke-width="2"/>
+  <path fill="#000000" stroke="#000" stroke-width="0" d="m617.90249,703.77305l0.74251,-0.4988l0.74251,0.4988l-0.37125,0l0,0.5012l-0.74251,0l0,-0.5012l-0.37125,0l-0.00001,0z" id="svg_13"/>
+  <text transform="matrix(4.71179 0 0 2.40446 -342.368 -990.471)" stroke="#000" xml:space="preserve" text-anchor="start" font-family="'Cinzel'" font-size="24" id="svg_9" y="718.93983" x="76.11025" fill="#000000">Go</text>
+ </g>
+
+</svg>

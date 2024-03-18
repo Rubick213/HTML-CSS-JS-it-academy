@@ -1,10 +1,8 @@
 svg{
     overflow: visible;
 }
-#svg_2:hover, #svg_3:hover, #svg_4:hover{
-    fill-opacity: 100%;
-    stroke-dashoffset: 0;
-}
+
+/* //////////////////////////////////////////////////// */
 #svg_2, #svg_3, #svg_4{
     transition: all .7s ease-in-out;
     stroke-width: 5;
@@ -12,18 +10,10 @@ svg{
     stroke-dashoffset: 1000;
 }
 
-
-#svg_1{
-    transition: all 2s ease-in-out;
+#svg_2:hover, #svg_3:hover, #svg_4:hover{
+    fill-opacity: 100%;
+    stroke-dashoffset: 0;
 }
-#svg_1~#l2{
-    display: none;
-}
-#svg_1:hover~#l2{
-    display: block;
-}
-
-
 
 #svg_2{
     stroke: #00ff00;
@@ -35,4 +25,15 @@ svg{
     stroke: red;
 }
 
+/* ///////////////////////////////////// */
+#svg_1{
+    transition: all .7s ease-in-out;
+}
+#layer_2, #go, #attention, #stop{
+    transition: all .7s ease-in-out;
+    opacity: 0%;
+}
+#svg_1:hover~#layer_2, #svg_2:hover~#go, #svg_3:hover~#attention, #svg_4:hover~#stop{
+    opacity: 100%;
+}
 
