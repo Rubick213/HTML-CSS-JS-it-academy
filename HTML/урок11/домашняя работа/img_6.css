@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* overflow я применил просто для картинки 5, она застовляла у меня делать скрол страницы */
+    overflow: hidden;
+}
+.conteiner{
+    /* background-color: rgba(70, 70, 201, 0.566); */
+    margin-bottom: 20px;
+}
+.conteiner::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.box{
+    width: 29%;
+    float: left;
+    margin: 0 2%;
+    padding: 30px 30px;
+    border-radius: 10px;
+}
+img{
+    width: 100%;
+}
+/* //////////////шишка+птичка///////////// */
+.front{
+    position: relative;
+    background-color: rgba(128, 128, 128, 0.247);
+
+    perspective: 400px;
+    transition: all 1s ease-in-out;
+}
+.front_img,
+.back_img{
+    position: absolute;
+    perspective: 400px;
+    transition: all 1s ease-in-out;
+}
+.back_img{
+    position: static;
+    backface-visibility: hidden;
+    
+}
+.front:hover > .front_img,
+.front:hover > .back_img {
+    transform: rotateX(180deg) scale(1,-1);
+}
+/* //////////////птица////////////// */
+.conteiner:nth-child(1) .box:nth-child(2){
+    animation: bird .01s infinite alternate;
+}
+.conteiner:nth-child(1) .box:nth-child(2):hover{
+    cursor: grab;
+     animation: none;
+}
+@keyframes bird{
+    from{transform: rotate(10deg);}
+    25%{transform: rotate(5deg);}
+    50%{transform: rotate(0deg);}
+    75%{transform: rotate(-5deg);}
+    to{transform: rotate(-10deg);}
+}
+/* ///////////лодка////////////// */
+.conteiner:nth-child(1) .box:nth-child(3){
+
+}
+.conteiner:nth-child(1) .box:nth-child(3) img{
+    clip-path: ellipse(35% 50%);
+    animation:linear elips  2s infinite ;
+    
+}
+@keyframes elips{
+    for{transform: translate(0, 90px) rotate(0) ;}
+    20%{transform: translate(0, 0) rotate(72deg);}
+    40%{transform: translate(0, 90px) rotate(144deg) ;}
+    60%{transform: translate(0, 0) rotate(216deg) ;}
+    80%{transform: translate(0, 90px) rotate(288deg) ;}
+    to{transform: rotate(360deg) ;}
+}
+/* ////////////////дерево///////////////// */
+.trent{
+    background-color: #9d9d9d;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #9d9d9d,
+                -5px -5px 10px #9d9d9d,
+                5px -5px 10px #9d9d9d,
+                -5px 5px 10px #9d9d9d;
+}
+.box .trent .trent__prot{
+    clip-path: inset(120px 150px 120px 150px);
+    opacity: 0%;
+    transition: all 1s ease-in;
+}
+.trent:hover>.trent__prot{
+    clip-path: inset(0 0 0 0);
+    opacity: 100%;
+}
+/* /////////////////горы//////////////// */
+.conteiner:nth-child(2) .box:nth-child(2){
+}
+.box_art{
+    box-shadow: 5px 5px 10px #9d9d9d,
+                -5px -5px 10px #9d9d9d,
+                5px -5px 10px #9d9d9d,
+                -5px 5px 10px #9d9d9d;
+    background: url(/img/treeeesh.jpg);
+}
+.art{
+    transform-origin: 20px 40px;
+    animation: tik 3s ease-in-out 1s forwards;
+}
+
+@keyframes tik{
+    0%{transform: rotate(0);}
+    15%{transform: rotate(150deg);}
+    30%{transform: rotate(10deg);}
+    45%{transform: rotate(130deg);}
+    60%{transform: rotate(30deg);}
+    75%{transform: rotate(110deg);}
+    90%{transform: rotate(50deg);}
+    100%{transform: rotate(55deg);}
+}
+/* ////////////////река//////////////// */
+.river{
+    background-color: black;
+    padding: 10px;
+    overflow: hidden;
+
+    display: flex;
+}
+.river img{
+    margin-left: 25px;
+    transform: translate(-25px, 0);
+    animation: slide 5s linear infinite ;
+    
+}
+@keyframes slide {
+    from{transform: translate(-25px, 0);}
+    33%{transform: translate(-414px, 0);}
+    66%{transform: translate(-804px, 0);}
+    to{transform: translate(-1191px, 0);}
+}
+
+
+
+
+
+ 
+  

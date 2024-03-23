@@ -1,0 +1,78 @@
+/* @keyframes kub {
+    from{box-shadow:3px 3px 10px red, -3px -3px 10px blue}
+    50%{box-shadow:3px 3px 10px blue, -3px -3px 10px red}
+    to{box-shadow:3px 3px 10px blue, -3px -3px 10px red}
+}
+.card{
+    display: inline-block;
+    margin: 50px 50px 0 50px;
+    border: 1px solid black;
+    padding: 20px;
+    box-shadow: 3px 3px 10px grey, -3px -3px 10px grey;
+    transition: 1s ease-in-out;
+    animation: kub 1s infinite;
+}
+
+.card:hover{
+    transform: rotate(360deg);
+    transform: scale(1.2);
+
+} */
+/* img{
+    width: 300px;
+}
+
+.test{
+    width: 300px;
+    margin: 0 auto;
+} */
+@keyframes svgg{
+    from{opacity: 0%;}
+    25%{opacity: 0%;}
+    50%{opacity: 100%;}
+    75%{opacity: 0%;}
+    to{opacity: 0%;}
+}
+@keyframes svgg2{
+    from{opacity: 100%;}
+    25%{opacity: 100%;}  
+    50%{opacity: 0%;}
+    75%{opacity: 100%;}
+    to{opacity: 100%;}
+}
+.tt,
+.t__content,
+.rr,
+.r__content,
+.bb,
+.b__content,
+.ll,
+.l__content{
+    /* fill: red; */
+    /* opacity: 100%; */
+    opacity: 0%;
+    animation: svgg2 3s infinite;
+}
+.t,
+.tt__content,
+.r,
+.rr__content,
+.b,
+.bb__content,
+.l,
+.ll__content{
+    /* opacity: 0%; */
+    opacity: 100%;
+    animation: svgg 3s infinite;
+}
+
+svg{
+    margin-left: 50px;
+    margin-top: 250px;
+    border: 1px solid black;
+    width: 250px;
+    height: 250px;
+    overflow: visible;
+    padding: 100px;
+    
+}

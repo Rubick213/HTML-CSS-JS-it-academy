@@ -1,0 +1,104 @@
+/* .one,
+.two{
+    background-color: brown;
+    display: flex;
+}
+
+.one{
+    justify-content: start;
+    margin-bottom: 50px;
+}
+.two{
+    justify-content: end;
+}
+
+.one_item,
+.two_item{
+    width: 250px;
+    height: 250px;
+    background-color: aqua;
+    margin: 10px;
+    
+} */
+
+
+/* .test{
+    height: 500px;
+}
+.top,
+.bot{
+    font-size: 50px;
+    height: 100px;
+    background-color:rgb(89, 115, 202);
+}
+.mid{
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.mid div:nth-child(1){
+    font-size: 50px;
+    flex-basis: 300px;
+    flex-grow: 2;
+    background-color: rgb(43, 226, 147);
+}
+.mid div:nth-child(2){
+    font-size: 50px;
+    flex-basis: 300px;
+    flex-grow: 1;
+    background-color: green;
+} */
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.cont{
+    margin: 0 auto;
+    max-width: 1000px;
+    /* border: 1px solid black; */
+    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.left{
+    background-color: green;
+    min-width: 650px;
+    max-width: 650px;
+    min-height: 400px;
+    /* flex: auto; */
+}
+.rigth{
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 0 0 300px;
+}
+.rigth div:first-child{
+    background-color: blue;
+    min-height: 175px;
+}
+.rigth div:last-child{
+    background-color: blue;
+    min-height: 175px;
+}
+
+@media screen and (max-width: 968px){  
+    .cont{
+        max-width: 650px;
+    }
+    .rigth{
+        flex: 0 0 650px;
+        flex-direction: row;
+        margin-top: 50px;
+
+    }
+    .rigth div:first-child{
+        min-width: 300px;
+    }
+    .rigth div:last-child{
+        min-width: 300px;
+    }
+}

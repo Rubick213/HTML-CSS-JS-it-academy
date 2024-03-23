@@ -1,0 +1,48 @@
+.conteiner{
+    /* background-color: blue; */
+    margin-top: 20px
+}
+.form__group{
+    /* background-color: blueviolet; */
+    width: 100%;
+    margin-bottom: 10px;
+}
+label{
+    /* background-color: aqua; */
+    width: 17%;
+    float: left;
+    font-size: 20px;
+}
+.input{
+    margin-left: 17%;
+}
+.form__group:nth-child(3) .input{
+    float: left;
+    margin-left: 0;
+}
+.goup__btn{
+    margin-left: 40%;
+}
+.goup__btn button{
+    padding: 5px 10px;
+}
+.input input{
+    font-size: 20px;
+}
+
+.form__group a{
+    text-decoration: none;
+    color: rgb(30, 48, 80);
+}
+.form_i{
+    margin-left: 17%;
+}
+i{
+    font-size: 40px;
+    padding-right: .2vw;
+}
+i:hover{
+    transform: perspective(500px) rotate3d(30, 90, 0, 40deg);
+    transition: .3s ease-in-out;
+    color: brown;
+}

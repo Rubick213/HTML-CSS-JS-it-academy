@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>akaunt</title>
+    <link rel="stylesheet" href="/HTML/урок11/lesson11.css">
+    <!-- скрипт font owesome сайт с svg -->
+    <script src="https://kit.fontawesome.com/eb6670d11e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="conteiner">
+        <h2>Настройка аккаунта</h2>
+        <form class="form">
+            <div class="form__group">
+                <label for="email">E-mail</label>
+                <div class="input">
+                    <input id="email" type="email" name="email" value="rubick@mail.ru" readonly>
+                </div>
+            </div>
+
+            <div class="form__group">
+                <label for="tel">Телефон</label>
+                <div class="input">
+                    <input id="tel" type="tel" name="phone" value="375292421414" readonly>
+                </div>
+            </div>
+
+            <div class="form__group">
+                <label for="password">Пароль</label>
+                <div class="input btn">
+                    <input id="password" type="password" name="password" value="1234567890" readonly>
+                </div>
+                <div class="goup__btn">
+                    <button type="button">Изменить</button>
+                </div>
+            </div>
+
+            <div class="form__group">
+                <label>Профили соцсетей</label>  
+                <div class="form_i">   
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-telegram"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="form__group">
+                <div class="input">
+                    <input name="chek" id="check" type="checkbox" checked value="true">Получить уведомления
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
