@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    font: normal 1.2em 'Lobster', 'sans-serif';
+    padding: 0 30px;
+}
+.header__title{
+    text-align: center;
+}
+.header__title h1{
+    font-weight: bold;
+}
+.header__logo{
+ width: 300px;
+}
+hr,
+.link_menu{
+    margin: 25px 0;
+}
+/* ///////////////2///////////// */
+.link_menu{
+    text-align: center;
+    font: normal 600 1.5em / 1.3em 'Bad Script', 'cursive';
+    text-indent: 0;
+    word-spacing: 0.2em;
+    letter-spacing: 0.1em;
+}
+.link_menu ul{
+    list-style-type: none;
+    padding: 0;
+}
+/* /////////////3///////////////// */
+.section{
+    width: 90%;
+    
+    display: flex;
+    flex-direction: row;
+}
+.aside_menu{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 250px;
+}
+
+.aside_list{
+    padding: 0 30px;
+
+    font: 15px sans-serif;
+    margin-bottom: 10px;
+}
+.aside_list h2,
+.asid_list_herois h2{
+    font-weight: bold;
+    font-size: 2em;
+    margin: 10px 0;
+    text-align: center;
+}
+.aside_list ol{
+    list-style-position: inside;
+    text-align: justify;
+}
+.aside_list ol li:not(.aside_list ol li:last-child),
+.asid_list_herois div:not(.asid_list_herois div:last-child){
+    margin-bottom: 5px;
+}
+
+.asid_list_herois{
+    font: 15px sans-serif;
+}
+.asid_list_herois div{
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+}
+.asid_list_herois img{
+    width: 70px;
+    margin-right: 5px;
+}
+/* /////////////////3.2/////////////// */
+.content{
+    padding: 10px 0 0 0;
+    font: normal 500 1.3em / 1em 'Caveat', 'cursive';
+}
+.content div{
+    display: flex;
+    align-items:flex-start;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.content div>img{
+width: 160px;
+margin-right: 10px;
+}
+.content div:nth-child(1){
+    background-color: #EFDCC5;
+}
+.content div:nth-child(2){
+background-color: #F0A5B6 ;
+}
+.content div:nth-child(3){
+background-color: #BAB7B3;
+}
