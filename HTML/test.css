@@ -1,47 +1,8 @@
-.general {
-    border: 1px solid black;
-    min-height: 420px;
-    padding: 32px;
-    
-    background: url('/left-top-removebg-preview.png') no-repeat left top,
-                url('/left-bottom-removebg-preview.png') no-repeat left bottom,
-                url('/righ-top-removebg-preview.png') no-repeat right top,
-                url('/right-bottom-removebg-preview.png') no-repeat right bottom,
-                url('/top-removebg-preview.png') repeat-x top center,
-                url('/bottom-removebg-preview.png') repeat-x bottom center,
-                url('/left-removebg-preview.png') repeat-y left center,
-                url('/right-removebg-preview.png') repeat-y right center,
-                linear-gradient(90deg, rgba(4,242,239,1) 0%,
-                                       rgba(38,78,76,1) 35%,
-                                       rgba(23,14,14,1) 46%,
-                                       rgba(23,14,14,1) 58%,
-                                       rgba(125,37,122,1) 71%,
-                                       rgba(238,69,252,1) 100%);;
-    
+html{
+    background-color: rgb(148, 131, 34);
 }
 
-.gen2 {
-    position: absolute;
-    width: 1201px;
-    height: 415px;
-    border: 2px solid rgb(5, 0, 0);
-}
 
-.gen3 {
-    justify-content: center;
-    position: relative;
-    top: 20px;
-    left: 20px;
-}
 
-.block {
-    margin: 10px;
-    min-height: 60px;
-    width: 150px;
-    border: 2px solid rgb(14, 1, 1);
-    display: inline-block;
-}
-button {
-    height: 60px;
-    width: 100%;
-}
+
+
