@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    border: 1px solid black;
     text-decoration: none;
 }
 .wrapper{
@@ -11,7 +10,6 @@
     padding: 0 20px;
 }
 .header{
-    background-color: gold;
     font-family: "Lora", serif;
 }
 .header__conteiner{
@@ -44,9 +42,7 @@
 
 
 
-
 .main{
-    background-color: aqua;
     display: grid;
     grid-template: 1fr / 300px 1fr;
     grid-column-gap: 10px;
@@ -58,11 +54,12 @@
 }
 .main__menu_link{
     display: grid;
-    grid-template: minmax(50px, 1fr) auto/ 1fr 270px 1fr;
+    grid-template: 50px auto/ 1fr 270px 1fr;
     grid-gap: 10px;
     justify-items: center;
 }
-.main__menu_link h2{
+.main__menu_link h2,
+.main__menu_info h2{
     grid-column: 1/ span 3;
 }
 
@@ -71,7 +68,7 @@
     font-family: "Lora", serif;
     list-style-position: inside;
     display: grid;
-    grid-template: repeat(8, 1fr)/ 1fr;
+    grid-template: repeat(8, 50px) / 1fr;
     grid-row-gap: 10px;
     
 }
@@ -84,5 +81,47 @@
 
 .main__menu_info{
     display: grid;
+    grid-template: 50px repeat(5, auto)/ 1fr 270px 1fr;
+    grid-row-gap: 10px;
     
+}
+.main__menu_info div{
+    display: grid;
+    grid-template: 1fr/ 1fr 1fr;
+    grid-column: 2/3;
+    font-family: "Lora", serif;
+}
+.main__menu_info div p{
+    align-self: center;
+}
+
+.section{
+    padding-right: 50px;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+}
+.section div{
+    display: grid;
+    grid-template: auto / auto auto;
+    grid-column-gap: 10px;
+    margin-bottom: 10px;
+}
+.book1{
+    padding: 10px;
+    background-color: #EFDCC5;;
+}
+.book2{
+    padding: 10px;
+    background-color: #F0A5B6;;
+}
+.book3{
+    padding: 10px;
+    background-color: #BAB7B3;;
+}
+span{
+    font-size: 25px;
+    color: red;
 }
