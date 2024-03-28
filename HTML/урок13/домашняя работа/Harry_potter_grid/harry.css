@@ -1,0 +1,40 @@
+.icons svg{
+    display: none;
+}
+a svg{
+    width: 30px;
+    height: 30px;
+}
+a:not(div a:last-child){
+    text-decoration: none;
+    margin-right: 10px;
+}
+svg:hover{
+    fill: rosybrown;
+    transform: scale(1.5,1.5);
+    transition: all 0.5s ease-in-out;
+}
+
+
+.cont{
+    display: grid;
+    grid-template: auto auto / 1fr;
+    grid-gap: 10px;
+}
+.form{
+    display: grid;
+    grid-template: repeat(5, auto) / 1fr;
+    grid-gap: 10px;
+}
+.form>div{
+    display: grid;
+    grid-template: auto / 300px minmax(30%, 50%) auto;
+    grid-gap: 10px;
+}
+.btn{
+    justify-self: center;
+}
+.akaunt p{
+    margin: 0;
+}
+
