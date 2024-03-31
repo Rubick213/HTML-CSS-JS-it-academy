@@ -2,7 +2,7 @@
 // let oneNum = +prompt('введите число 1')
 // let twoNum = +prompt('введите число 2')
 // let threeNum = +prompt('введите число 3')
-// let res = oneNum * 2 - threeNum - twoNum * 3
+// let res = 2 * (oneNum + threeNum) - twoNum * 3
 // console.log(res);
 //2
 // var oneNum = parseFloat(prompt('введите число 1'))
