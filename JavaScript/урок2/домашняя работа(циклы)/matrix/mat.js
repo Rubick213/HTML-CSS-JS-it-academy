@@ -20,11 +20,11 @@ if(isNaN(row)|| isNaN(row)) {
                 let number = parseInt(prompt(`введите значение ячейки ${i}-${k}`))
                 if (isNaN(number)) {
                     alert('вы ввели не допустимое значение, попробуйте заного и введите число')
-                    break test
+                    continue test
                 } else {
                     matrix += ' ' + number
                     res += number
-                    diogonoalArr[i-1].push(k)    
+                    diogonoalArr[i-1].push(number)    
                 }
             }
             console.log(matrix)
@@ -32,7 +32,9 @@ if(isNaN(row)|| isNaN(row)) {
             alert (`Сумма элементов в строке N${i} равна ${res}`)      
     }
 }
-
+// 2 проверки 
+// одна проверка на 0 rows 0 ---- columns chislo widaet 0
+// вторая на nan row cjislo ------ columns 0 widaet nan
 if (row > columns || row < columns) {
     alert('сумм по диаганли не удалсь так как вы ввели разные числа в запрос')
 } else {
@@ -41,4 +43,5 @@ if (row > columns || row < columns) {
     }
     alert(`сумма по диогонали равна ${diogonoalSum}`)
 }
+console.log(diogonoalArr);
 
