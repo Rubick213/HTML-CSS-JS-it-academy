@@ -4,7 +4,7 @@ let columns = parseInt(prompt('колоны'))
 let diogonoalSum = 0
 let diogonoalArr = []
 
-if(isNaN(row)|| isNaN(row)) {
+if(isNaN(row)|| isNaN(columns)) {
         alert('Вы Ввели недопустимое значение в одно из запросов, введите число!');    
     } else if(row < 0 && columns > 0 || row > 0 && columns < 0 || row < 0 && columns < 0) {
         alert('вы ввели в один из запросов отрицательное число, введите положительное число!')
@@ -34,7 +34,7 @@ if(isNaN(row)|| isNaN(row)) {
 }
 
 
-if (row > columns || row < columns) {
+if (row > columns || row < columns || diogonoalArr.length < row) {
     alert('сумм по диаганли не удалсь так как вы ввели разные числа в запрос')
 } else if (isNaN(row) && !isNaN(columns) || !isNaN(row) && isNaN(columns) || isNaN(row) && isNaN(columns)) {
     alert('сумм по диаганли не удалсь так как вы отминили ввод или ввели недопустимое значение')
