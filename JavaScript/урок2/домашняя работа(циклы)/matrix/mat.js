@@ -38,6 +38,8 @@ if (row > columns || row < columns || diogonoalArr.length < row) {
     alert('сумм по диаганли не удалсь так как вы ввели разные числа в запрос')
 } else if (isNaN(row) && !isNaN(columns) || !isNaN(row) && isNaN(columns) || isNaN(row) && isNaN(columns)) {
     alert('сумм по диаганли не удалсь так как вы отминили ввод или ввели недопустимое значение')
+} else if (diogonoalArr.length == 1 ) {
+    alert('сумма по диаганли не удалсь так как одна ячейка')
 } else {
     for (let i = 0; i < diogonoalArr.length; i++) {
         diogonoalSum += diogonoalArr[i][i]
