@@ -37,7 +37,7 @@ if(isNaN(row)|| isNaN(row)) {
 if (row > columns || row < columns) {
     alert('сумм по диаганли не удалсь так как вы ввели разные числа в запрос')
 } else if (isNaN(row) && !isNaN(columns) || !isNaN(row) && isNaN(columns) || isNaN(row) && isNaN(columns)) {
-    alert('сумм по диаганли не удалсь так как вы отминили ввод')
+    alert('сумм по диаганли не удалсь так как вы отминили ввод или ввели недопустимое значение')
 } else {
     for (let i = 0; i < diogonoalArr.length; i++) {
         diogonoalSum += diogonoalArr[i][i]
@@ -48,6 +48,6 @@ if (row > columns || row < columns) {
         alert(`сумма по диогонали равна ${diogonoalSum}`)
     }
 }
-// console.log(diogonoalArr);
-// console.log(diogonoalArr.length);
+console.log(diogonoalArr);
+
 
