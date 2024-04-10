@@ -32,24 +32,36 @@
 //     let use
 //     let i = 1
 
-//     while (sumArr.length < 5) {
+//     while (sumArr.length < 10) {
 //         use = prompt(`Введите число ${i}`)
 //         sumArr.push(use)
 //         i++
 //     }
+    // 1 вариант
+    // let sum = 0
+    // for (let i = 0; i < sumArr.length; i++) {
+    //     if (isNaN(parseInt(sumArr[i]))) {
+    //         continue
+    //     } else {
+    //     sum += parseInt(sumArr[i])
+    //     }
+    // }
+    // return sum
 
-//     let sum = 0
-//     for (let i = 0; i < sumArr.length; i++) {
-//         if (isNaN(parseInt(sumArr[i]))) {
-//             continue
-//         } else {
-//         sum += parseInt(sumArr[i])
-//         }
-        
-//     }
-//     return sum
+    // 2 вариант 
+    // let nun = sumArr.reduce((a,b) => {
+    //     return !isNaN(b) ? a + Number(b) : a
+    // },0)
+    // console.log(nun);
 
+    // 3вариант
+    // let res = 0
+    // for (const sum of sumArr) {
+    //     if(!isNaN(sum)) res += Number(sum)
+    // }
+    // console.log(res);
 // }
+
 // console.log(sumNum())
 
 
