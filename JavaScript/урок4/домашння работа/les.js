@@ -79,80 +79,141 @@
 // - сама заполняет его только четными числами (2, 4, 6, 8...)
 
 //функция пушит пустые массивы в массив
-// function matrixArr() {
-//     const arr1 = []
-//     let MatrixX = prompt('Введите размеры массива по X')
-//     let MatrixY = prompt('Введите размеры массива по Y')
-//     let num = 1 //счетчик для заполнения элемента массива(пустых массивов)
+let MatrixX
+let MatrixY
+let arr1
+function matrixArr() {
+    arr1 = []
+    MatrixX = prompt('Введите размеры массива по X')
+    MatrixY = prompt('Введите размеры массива по Y')
+    let num = 1 //счетчик для заполнения элемента массива(пустых массивов)
 
-//     if(isNaN(parseInt(MatrixX)) || isNaN(parseInt(MatrixY)) || isNaN(Number(MatrixX)) || isNaN(Number(MatrixY))) {
-//         return 'Вы ввели неверное значение, введите число'
-//     } else if(Number(MatrixX == 0) || Number(MatrixY) == 0) {
-//         return 'Вы ввели 0, введите число больше нуля'
-//     } else {
-//         for (let i = 0; i < MatrixX; i++) {
-//             arr1.push([]) 
-//             for (let k = 0; k < MatrixY; k++) {
-//                 arr1[i].push(num)
-//                 num++
-//             }
-//         }
-//     }
-//     // console.log(arr1);
-//     return arr1
-// }
-
+    if(isNaN(parseInt(MatrixX)) || isNaN(parseInt(MatrixY)) || isNaN(Number(MatrixX)) || isNaN(Number(MatrixY))) {
+        return 'Вы ввели неверное значение, введите число'
+    } else if(Number(MatrixX) == 0 || Number(MatrixY) == 0 || Number(MatrixX) < 0 || Number(MatrixY) < 0) {
+        return 'Вы ввели 0 либо меньше 0, введите число больше нуля'
+    } else {
+        for (let i = 0; i < MatrixX; i++) {
+            arr1.push([]) 
+            let strD = ''
+            for (let k = 0; k < MatrixY; k++) {
+                arr1[i].push(num)
+                strD += ' ' + num
+                num++
+            }
+            // console.log(strD);
+        }
+    }
+    
+    return arr1
+}
+// matrixArr()
 
 // функция которая меняет на отрицательные значения 
-// function negativeNumber() {
-//     let negNumArr = matrixArr()
-//     for (let i = 0; i < negNumArr.length; i++) {
-//         for(let k = 0; k < negNumArr[i].length; k++)
-//         negNumArr[i][k] = -negNumArr[i][k]
-        
-//     }
-//     // console.log(negNumArr);
-//     return negNumArr
-// }
+function negativeNumber() {
+    let negNumArr = matrixArr()
+    for (let i = 0; i < negNumArr.length; i++) {
+        let strD = ''
+        for(let k = 0; k < negNumArr[i].length; k++) {
+            negNumArr[i][k] = -negNumArr[i][k]
+            strD += ' ' + negNumArr[i][k]
+        }
+        // console.log(strD);
+    }
+    // console.log(negNumArr);
+    return negNumArr
+}
 
 
 // функция которая выводит четные числа
-// function even() {
-//     let evenNumber = matrixArr()
-//     let numArr = []
+let numArr
+function even() {
+    numArr = []
+    matrixArr()
     
-//     if (typeof evenNumber === 'string') {
-//         return 'Вы ввели неверное значение, введите число'
-//     } else {
-//         for (let i = 0; i < evenNumber.length; i++) {
-//             numArr.push([])
-//                 for (let k = 0; k < evenNumber[i].length; k++) {
-//                     if(evenNumber[i][k] % 2 === 0) {
-//                         numArr[i].push(evenNumber[i][k])
-//                     } 
-//                 } 
-//         }
-//     }
-//     // console.log(numArr);
-//     return numArr
-// }
+        if (isNaN(parseInt(MatrixX)) || isNaN(parseInt(MatrixY)) || isNaN(Number(MatrixX)) || isNaN(Number(MatrixY))) {
+            return 'Вы ввели неверное значение, введите число'
+        } else if (Number(MatrixX) == 0 || Number(MatrixY) == 0 || Number(MatrixX) < 0 || Number(MatrixY) < 0) {
+            return 'Вы ввели 0 либо меньше 0, введите число больше нуля'
+        } else {
+            let num = 2
+            for (let i = 0; i < MatrixX; i++) {
+                let strD = ''
+                numArr.push([])
+                for (let k = 0; k < MatrixY; k++) {
+                    if (num % 2 === 0) {
+                        strD += ' ' + num
+                        numArr[i].push(num)
+                       
+                        num += 2
+                    } else {
+                        num += 2
+                    }
+                    
+                }
+                // console.log(strD);    
+            }
+        }
+    // console.log(numArr);
+    return numArr
+}
 
 
 //функия которая выводит на экран результат в зависимости от выбора 
-// function resultNum () {
-//     let userSelection = +prompt(`какие числа хотите получить:\n1: по порядку\n2:отрицательные\n3:четные`)
-//     switch (userSelection) {
-//         case 1:
-//             document.write(`вы выбрали 1(чилса по порядку): ${matrixArr()}`) 
-//             break;
-//         case 2:
-//             document.write(`вы выбрали 2(отрицательные числа): ${negativeNumber()}`)
-//             break;
-//         case 3: 
-//             document.write(`вы выбрали 3(четные): ${even()}`)
-//             break;
-//         default:
-//             document.write('такого пункта у нас нет')
-//             break;
-//     }
-// }
+let userSelection
+function resultNum () {
+    userSelection = +prompt(`какие числа хотите получить:\n1: по порядку\n2:отрицательные\n3:четные`)
+    switch (userSelection) {
+        case 1:
+            // document.write(`вы выбрали 1(чилса по порядку): ${matrixArr()}`)
+            matrixArr()
+            z() 
+            break;
+        case 2:
+            // document.write(`вы выбрали 2(отрицательные числа): ${negativeNumber()}`)
+            negativeNumber()
+            z()
+            break;
+        case 3: 
+            // document.write(`вы выбрали 3(четные): ${even()}`)
+            even()
+            z()
+            break;
+        default:
+            document.write('такого пункта у нас нет')
+            break;
+    }
+}
+
+function z () {
+    switch (userSelection) {
+        case 1:
+        case 2:
+            if (isNaN(parseInt(MatrixX)) || isNaN(parseInt(MatrixY)) || isNaN(Number(MatrixX)) || isNaN(Number(MatrixY))) {
+                document.write('Вы ввели неверное значение, введите число')
+            } else if (Number(MatrixX) == 0 || Number(MatrixY) == 0 || Number(MatrixX) < 0 || Number(MatrixY) < 0){
+                document.write('Вы ввели 0 либо меньше 0, введите число больше нуля')
+            } else {
+                for (let i = 0; i < arr1.length; i++) {
+                    document.write(arr1[i] + '<br>')
+                }
+            }
+            break;
+        case 3 :
+            if (isNaN(parseInt(MatrixX)) || isNaN(parseInt(MatrixY)) || isNaN(Number(MatrixX)) || isNaN(Number(MatrixY))) {
+                document.write('Вы ввели неверное значение, введите число')
+            } else if (Number(MatrixX) == 0 || Number(MatrixY) == 0 || Number(MatrixX) < 0 || Number(MatrixY) < 0){
+                document.write('Вы ввели 0 либо меньше 0, введите число больше нуля')
+            } else {
+                for (let i = 0; i < numArr.length; i++) {
+                    document.write(numArr[i] + '<br>')
+                }
+            }
+            break
+            default:
+                break
+    }
+    
+    
+    
+}
