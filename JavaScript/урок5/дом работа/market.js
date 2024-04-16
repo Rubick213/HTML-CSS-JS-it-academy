@@ -36,7 +36,7 @@ let objectMarket = () => {
 let showProduct = (product) => {
     let str = 'НАШ ПРАЙС:\n'
     for (let i = 0; i < product.length; i++) {
-        str += product[i].name + ': ' + parseInt(product[i].price) + ' за kg\n'     
+        str += product[i].name + ': ' + parseFloat(product[i].price) + ' за kg\n'     
     }
     return alert(str)
     
@@ -91,9 +91,10 @@ let checkData = (data) => {
 //3 Спрашивает сколько денег у пользователя и отвечает сколько кг одного товара он может купить за эту сумму. (на 9-10 баллов)
 // Пример: Ввод -> 15
 // 	      Вывод: -> 4 кг яблоко или 2 кг апельсин или 2 кг банан или 2 кг мандарин или 5 кг груша
+
 let checkSum = arrObj => {
     let sum
-    let res = ''
+    let res = 'За вашу сумму вы купите: '
     do {
         sum = prompt('Введите сколько у вас денег')
         if (isNaN(sum)) {;
@@ -103,13 +104,27 @@ let checkSum = arrObj => {
         } else if (sum == null || sum == '' || isNaN(parseInt(sum))) {
             alert('Вы ничего не ввели')
         } else {
+            let test = false;
+
             for (const obj of arrObj) {
-                res += `${Math.floor(parseInt(sum) / parseFloat(obj.price))} kg ${obj.name}, или `
+                let resSum = Math.floor(Number(sum) / parseInt(obj.price));
+                if (resSum > 0) {
+                    res += `${resSum} kg ${obj.name} или `;
+                    test = true;
+                }
+            }
+
+            if (!test) {
+                res = 'За вашу сумму вы ничего не купите!';
+            } else {
+                res = res.slice(0, -4);
             }
             break
+            
         }
     } while (true);
-    res = res.slice(0, -6)
+    
+    
     alert(res)
 }   
 // checkSum(objectMarket())
