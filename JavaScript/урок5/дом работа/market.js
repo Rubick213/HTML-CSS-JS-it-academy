@@ -107,7 +107,7 @@ let checkSum = arrObj => {
             let test = false;
 
             for (const obj of arrObj) {
-                let resSum = Math.floor(Number(sum) / parseInt(obj.price));
+                let resSum = Math.floor(Number(sum) / parseFloat(obj.price));
                 if (resSum > 0) {
                     res += `${resSum} kg ${obj.name} или `;
                     test = true;
