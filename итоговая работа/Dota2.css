@@ -187,8 +187,10 @@ head{
 .news_head{
     position: absolute;
     bottom: 0;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%,
-                                           rgb(0, 0, 0) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 12%, rgba(0,0,0,0.8) 44%, rgba(0,0,0,0.9) 60%, rgba(0,0,0,1) 80%);
+
+    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%,
+                                           rgb(0, 0, 0) 100%); */
     z-index: 10;
     width: 100%;
     min-height: 200px;
@@ -199,7 +201,7 @@ head{
 }
 .news_item{
     position: absolute;
-    bottom: -9em;
+    bottom: -10em;
     width: 100%;
 }
 .news_contayner{
@@ -255,13 +257,15 @@ head{
     background-size: cover;
     z-index: 1;
     border: none;
+    min-height: 250px;
 }
 .coontayner_block>.news_bg_capsul:nth-child(2){
     background: url(./img/int.png) no-repeat;
     background-size: cover;
-    background-position: -14px 0;
+    background-position: -61px 0;
     z-index: 1;
     border: none;
+    min-height: 250px;
 }
 .coontayner_block>.news_bg_capsul:nth-child(3){
     background: url(./img/bg_dota_plus.png) no-repeat;
@@ -269,18 +273,21 @@ head{
     background-position: 2px 0;
     z-index: 1;
     border: none;
+    min-height: 250px;
 }
 .coontayner_block>.news_bg_capsul:nth-child(4){
     background: url(./img/bg_dota_plus.png) no-repeat;
     background-size: cover;
     background-position: 2px 0;
     z-index: 1;
+    min-height: 250px;
 }
 .coontayner_block>.news_bg_capsul:nth-child(5){
     background: url(./img/bg_dota_plus.png) no-repeat;
     background-size: cover;
     background-position: 2px 0;
     z-index: 1;
+    min-height: 250px;
     
 }
 .news_bg_capsul .capsul_item{
@@ -293,6 +300,7 @@ head{
     overflow: hidden;
     cursor: pointer;  
     border-bottom: 3px solid #272727 ;
+    padding: 20px 5px 0 20px;
 }
 .capsul_item:hover{
     background-color: #000000d4;
@@ -310,13 +318,17 @@ head{
 {
     transform: translatey(0px);
 }
-.cap_item_block1,
-.cap_item_block3{
-    transform: translateY(90px);
+.cap_item_block1{
+    transform: translateY(120px);
 }
 .cap_item_block2{
-    transform: translateY(145px);
+    transform: translateY(174px);
 }
+.cap_item_block3 {
+    transform: translateY(93px);
+    /* padding-right: 10px; */
+}
+
 .capsul_item div p{
     margin-bottom: 5px;
     font-size: 17px;
@@ -354,10 +366,17 @@ head{
 
 
 /* eto test */
-.mid{
+/* .mid {
     min-height: 200px;
     background-color: black;
-    
-    border: 3px solid rgb(252, 252, 5);
-    /* margin-bottom: 10px; */
+    background: rgb(0,0,0); */
+    /* background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 12%, rgba(0,0,0,0.8) 44%, rgba(0,0,0,0.9) 60%, rgba(0,0,0,1) 80%); */
+    /* border: 3px solid rgb(17, 4, 255);
+    margin-bottom: 10px;
+
+} */
+.block_img {
+    max-height: 200px;
+    overflow: hidden;
 }
+
