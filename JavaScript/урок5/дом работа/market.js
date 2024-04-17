@@ -110,7 +110,7 @@ let checkSum = arrObj => {
                 let resSum = Math.floor(Number(sum) / parseFloat(obj.price));
                 let kg = parseFloat(obj.count)
 
-                if (parseInt(sum) > parseInt(obj.price)) {
+                if (parseInt(sum) > parseFloat(obj.price)) {
                     resSum > kg ? res += `${kg} kg ${obj.name} или ` :  res += `${resSum} kg ${obj.name} или `;
                     test = true;
                 } else {
