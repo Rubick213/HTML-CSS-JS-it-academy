@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="slider-not-ready.css">
+  <title>Slider</title>
+</head>
+<body>
+  <div class="container">
+    <h1>простой слайдер</h1>
+
+    <div class="slider">
+        <div class="slider-line">
+            <img src="./1.jpg" alt="">
+            <img src="./2.jpg" alt="">
+            <img src="./3.jpg" alt="">
+            <img src="./4.jpg" alt="">
+            <img src="./5.jpg" alt="">
+        </div>
+    </div>
+    <div class="button-group">
+      <button class="slider-prev" onClick="prev()">Prev</button>
+      <button class="slider-next" onClick="next()">Next</button>
+    </div>
+  </div>
+
+  <script>
+    let offSet = 0 
+
+    let sliderLine = document.querySelector('.slider-line')
+    let nextButton = document.querySelector('.slider-prev')
+    let left = document.querySelector('.slider-next')
+    
+    nextButton.onclick = function() {
+      offSet += 225
+      if (offSet > 900) {
+        offSet = 0
+      }
+      sliderLine.style.left = -offSet + 'px'
+    }
+
+
+    
+
+    left.onclick = function() {
+      offSet = offSet - 225
+      if (offSet < 0) {
+        offSet = 900
+      }
+      sliderLine.style.left = -offSet + 'px'
+    }
+  </script>
+</body>
+</html>
