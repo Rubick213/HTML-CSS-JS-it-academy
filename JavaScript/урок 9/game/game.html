@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <style>
+        .blockGame{
+            display: flex;
+            flex-direction: column;
+            row-gap: 25px;
+            align-items: center;
+            width: 500px;
+            min-height: 500px;
+            border: 1px solid black;
+            margin: auto;
+            background: linear-gradient(139deg, rgba(236,238,196,1) 0%, rgba(62,164,0,1) 26%, rgba(149,1,167,1) 63%, rgba(143,8,20,1) 100%);
+        }
+        .message {
+            width: 400px;
+            height: 300px;
+            border: 3px solid black;
+            font-size: 30px;
+            font-weight: 700;
+            /* text-align: center; */
+            border: 3px solid whitesmoke;
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            color: whitesmoke;
+            text-align: center;
+            padding: 10px;
+            
+        }
+        .inputData{
+            width: 70%;
+            font-size: 35px;
+        }
+    </style>
+</head>
+<body>
+    <div class="blockGame">
+        <div class="message">Введите слово</div>
+        <input class="inputData" id="field" type="text">
+    </div>
+    <script src="./game.js"></script>
+</body>
+</html>
