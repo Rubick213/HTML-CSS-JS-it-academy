@@ -20,6 +20,10 @@ let CheckInput = (input) => {
     } else if(input.includes(' ')) {
         text.innerHTML = 'Вы ввели несколько слов или в словах есть пробелы введите одно слово!'
     } else {
+        input = input.toLowerCase()
+        if (input.slice(-1) == 'ь' || input.slice(-1) == 'ъ') {
+            input = input.slice(0, input.length-1).toLowerCase()
+        }
         if (arr.length == 0) {
             text.innerHTML = `Следующее слово на ${input.slice(-1)}`
             arr.push(input)
@@ -40,7 +44,7 @@ let CheckInput = (input) => {
                 text.innerHTML = `Слово должно начинаться на последнюю букву предыдущего слова "${arrElem}"`
             }
         }
-        // console.log(arr);
+        console.log(arr);
     }
 }
 
