@@ -1,7 +1,6 @@
 
 let input = document.querySelector('.inputData')
 let text = document.querySelector('.message')
-// const arr = ['arr', 'rob']
 const arr = []
 
 input.addEventListener('keypress', (event) => {
