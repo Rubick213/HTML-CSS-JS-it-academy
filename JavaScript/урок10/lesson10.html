@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .one {
+        width: 250px;
+        height: 200px;
+        border: 1px solid black;
+        position: relative;
+    }
+    .block {
+        position: absolute;
+        width: inherit;
+        height: inherit;
+        background-image: url('/1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: all 0.3s ease-in-out;
+    }
+    .block:hover{
+        filter: blur(3px);
+        opacity: 0.8;
+    }
+    .p{
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 50%;
+        font-size: 100px;
+    }
+</style>
+<body>
+    <div class="one">
+        <div class="block"></div>
+        <div class="p">test</div>
+    </div>
+    <a href='#'>https://itacademypvt.clickmeeting.com</a>
+    <script src="./lesson10.js"></script>
+</body>
+</html>

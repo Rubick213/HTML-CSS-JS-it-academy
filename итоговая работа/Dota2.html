@@ -239,7 +239,7 @@
                         </div>
                         <div class="news_swape">
                             <div class="swpae_left">
-                                <svg class="news_arrow" viewBox="0 0 15.699 8.707" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <svg class="news_arrow" viewBox="0 0 15.699 8.707">
                                     <polygon points="15.699,3.854 1.914,3.854 5.061,0.707 4.354,0 0,4.354 4.354,8.707 5.061,8 1.914,4.854 15.699,4.854 "/>
                                 </svg>
                             </div>
@@ -273,230 +273,107 @@
     <div class="block_game_info">
         <div class="block_game_opacity">
             <div class="game_contayner"> <!-- контейнер по центру марджин или флекс и ширина блока -->
-                <ul>
-                    <li>Описание</li>
-                    <li>Игровой процесс</li>
-                    <li>Разработка</li>
-                    <li>Карта</li>
-                    <li>Золото и опыт</li>
+                <ul class='listUl'>
+                    <li data-id="1" class="activeListGame">Описание</li>
+                    <li data-id="2">Игровой процесс</li>
+                    <li data-id="3">Разработка</li>
+                    <li data-id="4">Карта</li>
+                    <li data-id="5">Золото и опыт</li>
                 </ul>
                 
-                <div class=" listNull description_game">
-                    <img class="logo_description" src="./img/bgGame.png">
-                    <p class="info_dota one"><span class="dota_gradient">"Dota 2"</span> — это эпическая многопользовательская онлайн-игра, которая объединяет миллионы игроков со всего мира в битве за виртуальное господство на поле сражения.
-                        В этом мире магии и стратегии каждый игрок вступает в роль могущественного героя, обладающего уникальными способностями и навыками.</p>
-                    <p class="info_dota two">В самом центре <span class="dota_gradient">"Dota 2"</span> лежит принцип командной игры, где две команды, состоящие из пяти игроков в каждой, сражаются за контроль над картой.
-                        Цель состоит в разрушении вражеской крепости, называемой <span class="blue_gradient_dota">"Ancient"</span>, расположенной на базе противника.</p>
-                    <p class="info_dota three">Каждый игрок выбирает своего героя из более чем сотни разнообразных персонажей, каждый из которых обладает уникальными способностями, стилем игры и ролью на поле боя. Некоторые герои способны наносить огромный урон в ближнем бою, другие умело управляют магией и могут поддерживать своих товарищей, а третьи специализируются на стратегических атаках и контроле над игровым пространством.</p>
-                    <p class="info_dota foor">В течение игры игроки сражаются за контроль над ресурсами, выполняют задания, улучшают своего героя, приобретают предметы и сражаются с вражеской командой в напряженных схватках. Стратегия, коммуникация и быстрые реакции — вот ключевые элементы успеха в <span class="dota_gradient">"Dota 2"</span>.</p>
-                    <p class="info_dota fair"><span class="dota_gradient">"Dota 2"</span> не просто игра, это целый мир, в котором каждый матч приносит новые вызовы, стратегии и эмоции. От захватывающих моментов в битвах до сложных тактических решений, <span class="dota_gradient">"Dota 2"</span> предлагает игрокам бесконечные возможности для развития и развлечения в мире, где мастерство и соревнование вечны.</p>
-                </div>
-                <div class="listOne">
-                    <p class="info_dota fair">
-                        <span class="dota_gradient">Dota 2</span> является комбинацией RTS и RPG. Игроки делятся на две конкурирующие команды (силы Света и силы Тьмы), каждая из которых содержит до пяти игроков. Главной целью игры является уничтожение вражеского Древнего и защита своего. Древних защищают по три башни на каждой стороне. Каждый игрок управляет героем, стратегически мощной единицей с уникальными способностями и характеристиками, улучшаемыми со временем. Герой может получать опыт для повышения своего уровня, зарабатывать золото, покупать и собирать предметы, которые усиливают его. Каждый игрок постоянно получает небольшое количество золота, а также зарабатывает его убийством крипов, героев и разрушением строений.
-                        В <span class="dota_gradient">Dota 2</span> сделан сильный упор на тактику и командную работу, а стратегия зачастую завязана на скоростном наборе мощности, оптимальном выборе предметов и порядке улучшения способностей.
-                    </p>
-                </div>
-                <div class="listTwo">
-                    <!-- <img src="./img/valveLogo.jpg"> -->
-                    <!-- <svg class="shester" id="Layer_1" viewBox="-1 -2 45 35">
-                            <path class="shest_one" fill="#828282" d="M3.692,21.72c0.176,0.042,0.415,0.259,0.484,0.457l0.35,0.844c0.079,0.162,0.064,0.483-0.03,0.637
-                                l-1.397,2.284c-0.299,0.49-0.237,1.184,0.165,1.634l1.183,1.182c0.412,0.366,1.139,0.432,1.613,0.145l2.284-1.397
-                                c0.143-0.088,0.45-0.119,0.665-0.018l0.843,0.348c0.17,0.059,0.387,0.297,0.429,0.473l0.627,2.604
-                                c0.133,0.552,0.66,1.006,1.226,1.058c0,0,0.347,0.032,0.867,0.032s0.867-0.032,0.868-0.032c0.565-0.051,1.092-0.506,1.225-1.058
-                                l0.628-2.604c0.042-0.175,0.258-0.414,0.456-0.483l0.844-0.35c0.149-0.073,0.494-0.058,0.637,0.03l2.284,1.397
-                                c0.201,0.123,0.441,0.188,0.696,0.188c0.345,0,0.679-0.121,0.938-0.352l1.182-1.183c0.382-0.429,0.444-1.123,0.145-1.613
-                                l-1.397-2.284c-0.094-0.154-0.109-0.475-0.018-0.665l0.348-0.843c0.059-0.17,0.297-0.387,0.473-0.429l2.604-0.627
-                                c0.552-0.133,1.006-0.66,1.058-1.226c0,0,0.032-0.347,0.032-0.867s-0.032-0.867-0.032-0.868c-0.051-0.565-0.506-1.092-1.058-1.226
-                                l-2.603-0.626c-0.176-0.042-0.415-0.259-0.484-0.457l-0.35-0.844c-0.079-0.162-0.064-0.483,0.03-0.637l1.397-2.284
-                                c0.299-0.49,0.237-1.184-0.165-1.634l-1.183-1.182c-0.413-0.367-1.141-0.433-1.613-0.145l-2.284,1.397
-                                c-0.143,0.087-0.451,0.12-0.665,0.018l-0.843-0.348c-0.17-0.059-0.386-0.297-0.428-0.473l-0.628-2.604
-                                c-0.133-0.552-0.66-1.006-1.226-1.058C13.867,6.032,13.52,6,13,6s-0.867,0.032-0.868,0.032c-0.565,0.051-1.092,0.506-1.226,1.058
-                                L10.28,9.692c-0.042,0.176-0.259,0.415-0.457,0.484l-0.844,0.35c-0.15,0.073-0.494,0.057-0.637-0.03L6.059,9.099
-                                C5.586,8.811,4.874,8.861,4.425,9.263l-1.182,1.183c-0.382,0.429-0.444,1.123-0.145,1.613l1.397,2.284
-                                c0.094,0.154,0.109,0.475,0.018,0.665l-0.348,0.843c-0.059,0.17-0.297,0.387-0.473,0.429l-2.604,0.627
-                                c-0.552,0.133-1.006,0.66-1.058,1.226C0.032,18.133,0,18.48,0,19s0.032,0.867,0.032,0.868c0.051,0.565,0.506,1.092,1.058,1.226
-                                L3.692,21.72z M1,19c0-0.458,0.027-0.767,0.028-0.777c0.012-0.135,0.165-0.312,0.296-0.344l2.604-0.627
-                                c0.505-0.122,1.014-0.584,1.172-1.047l0.324-0.787c0.228-0.467,0.196-1.153-0.075-1.597l-1.397-2.283
-                                c-0.067-0.111-0.048-0.331,0.018-0.406L5.111,9.99c0.091-0.081,0.323-0.101,0.427-0.038l2.284,1.397
-                                c0.433,0.265,1.175,0.283,1.568,0.088l0.788-0.326c0.491-0.169,0.953-0.678,1.075-1.184l0.626-2.603
-                                c0.032-0.132,0.209-0.285,0.344-0.297C12.233,7.027,12.542,7,13,7s0.767,0.027,0.777,0.028c0.135,0.012,0.312,0.165,0.344,0.296
-                                l0.627,2.603c0.122,0.505,0.583,1.015,1.047,1.173l0.787,0.324c0.457,0.224,1.165,0.189,1.597-0.075l2.283-1.397
-                                c0.104-0.063,0.35-0.03,0.406,0.018l1.142,1.141c0.086,0.097,0.105,0.316,0.038,0.427l-1.397,2.284
-                                c-0.271,0.443-0.303,1.13-0.088,1.568l0.326,0.788c0.169,0.491,0.678,0.953,1.184,1.075l2.603,0.626
-                                c0.132,0.032,0.285,0.209,0.297,0.344C24.973,18.233,25,18.542,25,19s-0.027,0.767-0.028,0.777
-                                c-0.012,0.135-0.165,0.312-0.296,0.344l-2.604,0.627c-0.505,0.122-1.014,0.584-1.172,1.047l-0.324,0.787
-                                c-0.228,0.467-0.196,1.153,0.075,1.597l1.397,2.283c0.067,0.111,0.048,0.331-0.018,0.406l-1.141,1.142
-                                c-0.054,0.048-0.152,0.079-0.251,0.079c-0.069,0-0.133-0.015-0.175-0.041l-2.284-1.397c-0.432-0.264-1.174-0.283-1.568-0.088
-                                l-0.788,0.326c-0.491,0.169-0.953,0.679-1.074,1.184l-0.627,2.603c-0.032,0.132-0.209,0.285-0.344,0.297
-                                C13.767,30.973,13.458,31,13,31s-0.767-0.027-0.777-0.028c-0.135-0.012-0.312-0.165-0.344-0.296l-0.627-2.604
-                                c-0.122-0.505-0.584-1.014-1.047-1.172l-0.787-0.324c-0.204-0.1-0.451-0.152-0.715-0.152c-0.329,0-0.642,0.081-0.882,0.228
-                                l-2.283,1.397c-0.104,0.063-0.351,0.029-0.406-0.018L3.99,26.889c-0.086-0.097-0.105-0.316-0.038-0.427l1.397-2.284
-                                c0.271-0.443,0.303-1.13,0.088-1.568l-0.326-0.788c-0.169-0.491-0.678-0.953-1.184-1.075l-2.603-0.626
-                                c-0.132-0.032-0.285-0.209-0.297-0.344C1.027,19.767,1,19.458,1,19z"/>
-                            <path fill="#828282" d="M13,24.5c3.033,0,5.5-2.467,5.5-5.5s-2.467-5.5-5.5-5.5S7.5,15.967,7.5,19S9.967,24.5,13,24.5z M13,14.5
-                                c2.481,0,4.5,2.019,4.5,4.5s-2.019,4.5-4.5,4.5S8.5,21.481,8.5,19S10.519,14.5,13,14.5z"/>
-                        </svg>
-                        <svg class="shester" id="Layer_2" viewBox="-1 -2 45 35">
-                            <path fill="#828282" d="M27.477,5.314c-0.04,0.061-0.185,0.138-0.259,0.138l-1.861-0.018c-0.452,0-0.905,0.321-1.053,0.746
-                                c0,0-0.082,0.233-0.172,0.59c-0.09,0.357-0.128,0.601-0.128,0.601c-0.07,0.451,0.181,0.95,0.584,1.161l1.641,0.86
-                                c0.063,0.033,0.156,0.172,0.166,0.273l0.093,0.635c0.015,0.07-0.033,0.23-0.084,0.28l-1.322,1.296
-                                c-0.331,0.324-0.418,0.878-0.19,1.313l0.599,1c0.253,0.372,0.801,0.562,1.231,0.428l1.824-0.558c0.099,0,0.198,0.038,0.254,0.083
-                                l0.515,0.38c0.06,0.04,0.139,0.187,0.138,0.259l-0.018,1.852c-0.004,0.456,0.316,0.913,0.746,1.063c0,0,0.233,0.082,0.59,0.172
-                                c0.357,0.09,0.601,0.128,0.601,0.128c0.026,0.004,0.13,0.012,0.156,0.012c0.408,0,0.822-0.245,1.005-0.596l0.86-1.641
-                                c0.033-0.063,0.172-0.156,0.273-0.166l0.663-0.096c0.1,0,0.218,0.052,0.251,0.086l1.296,1.322c0.315,0.322,0.846,0.437,1.313,0.19
-                                l0.999-0.599c0.382-0.26,0.567-0.79,0.429-1.231l-0.552-1.767c-0.021-0.068,0.012-0.232,0.078-0.311l0.38-0.515
-                                c0.04-0.061,0.185-0.138,0.259-0.138l1.861,0.018c0.452,0,0.905-0.321,1.053-0.746c0,0,0.082-0.233,0.172-0.59
-                                c0.09-0.357,0.128-0.601,0.128-0.601c0.07-0.451-0.181-0.95-0.584-1.161l-1.641-0.86c-0.063-0.033-0.156-0.172-0.166-0.273
-                                L39.513,7.7c-0.015-0.07,0.033-0.23,0.084-0.28l1.322-1.296c0.331-0.324,0.418-0.878,0.19-1.313L40.51,3.811
-                                c-0.253-0.371-0.8-0.563-1.231-0.429L37.454,3.94c-0.099,0-0.198-0.038-0.254-0.083l-0.515-0.38
-                                c-0.06-0.04-0.139-0.187-0.138-0.259l0.018-1.852c0.004-0.456-0.316-0.913-0.746-1.063c0,0-0.233-0.082-0.59-0.172
-                                c-0.357-0.09-0.601-0.128-0.601-0.128C34.602,0,34.498-0.008,34.472-0.008c-0.408,0-0.822,0.245-1.005,0.596l-0.86,1.641
-                                c-0.033,0.063-0.172,0.156-0.273,0.166L31.671,2.49c-0.1,0-0.218-0.052-0.251-0.086l-1.296-1.322
-                                c-0.314-0.321-0.844-0.437-1.313-0.19L27.811,1.49c-0.382,0.26-0.567,0.79-0.429,1.231l0.552,1.767
-                                c0.021,0.068-0.012,0.232-0.078,0.311L27.477,5.314z M28.297,5.886L28.64,5.42c0.268-0.317,0.372-0.834,0.248-1.229l-0.551-1.766
-                                c-0.005-0.028,0.017-0.091,0.012-0.092l0.948-0.568l0.113,0.017l1.297,1.322c0.23,0.234,0.609,0.386,0.965,0.386
-                                c0.082,0,0.161-0.008,0.204-0.019l0.575-0.085c0.412-0.036,0.851-0.328,1.043-0.694l0.859-1.64c0.016-0.025,0.079-0.061,0.12-0.061
-                                c0.011,0.001,0.215,0.035,0.513,0.109c0.297,0.075,0.493,0.142,0.502,0.146c0.031,0.013,0.076,0.078,0.078,0.11l-0.018,1.852
-                                c-0.004,0.414,0.245,0.879,0.567,1.089L36.58,4.64c0.309,0.261,0.839,0.371,1.229,0.248l1.774-0.552
-                                c0.042,0,0.089,0.026,0.083,0.013l0.568,0.948c0.011,0.026,0,0.092-0.017,0.113l-1.322,1.297c-0.295,0.291-0.448,0.795-0.367,1.169
-                                l0.084,0.575c0.036,0.412,0.328,0.851,0.695,1.043l1.64,0.859c0.028,0.018,0.063,0.088,0.061,0.12
-                                c-0.001,0.011-0.035,0.215-0.109,0.513c-0.075,0.297-0.142,0.493-0.146,0.502c-0.013,0.031-0.078,0.076-0.11,0.078l-1.862-0.018
-                                c-0.411,0-0.871,0.249-1.079,0.567L37.36,12.58c-0.268,0.317-0.372,0.834-0.248,1.229l0.551,1.766
-                                c0.005,0.027-0.017,0.091-0.012,0.092l-0.948,0.568l-0.113-0.017l-1.297-1.322c-0.23-0.234-0.609-0.386-0.965-0.386
-                                c-0.082,0-0.161,0.008-0.204,0.019l-0.575,0.085c-0.412,0.036-0.851,0.328-1.043,0.694l-0.859,1.64
-                                c-0.016,0.025-0.079,0.061-0.12,0.061h0c-0.011-0.001-0.215-0.035-0.513-0.109c-0.297-0.075-0.493-0.142-0.502-0.146
-                                c-0.031-0.013-0.076-0.078-0.078-0.11l0.018-1.852c0.004-0.414-0.245-0.879-0.567-1.089L29.42,13.36
-                                c-0.222-0.188-0.549-0.3-0.875-0.3c-0.126,0-0.246,0.018-0.355,0.052l-1.774,0.552c-0.043,0-0.09-0.023-0.083-0.013l-0.568-0.948
-                                c-0.011-0.026,0-0.092,0.017-0.113l1.322-1.297c0.295-0.291,0.448-0.795,0.367-1.169L27.387,9.55
-                                c-0.036-0.412-0.328-0.851-0.695-1.043l-1.64-0.859c-0.028-0.018-0.063-0.088-0.061-0.12c0.001-0.011,0.035-0.215,0.109-0.513
-                                c0.075-0.297,0.142-0.493,0.146-0.502c0.013-0.031,0.078-0.076,0.11-0.078l1.862,0.018C27.629,6.453,28.089,6.204,28.297,5.886z"/>
-                            <path fill="#828282" d="M33,12c1.654,0,3-1.346,3-3s-1.346-3-3-3s-3,1.346-3,3S31.346,12,33,12z M33,7c1.103,0,2,0.897,2,2
-                                s-0.897,2-2,2s-2-0.897-2-2S31.897,7,33,7z"/>
-                    </svg> -->
+                <div class="list_info_game">
+                    <div class=" listNull activeListGame">
+                        <img class="logo_description" src="./img/bgGame.png">
+                        <p class="info_dota one"><span class="dota_gradient">"Dota 2"</span> — это эпическая многопользовательская онлайн-игра, которая объединяет миллионы игроков со всего мира в битве за виртуальное господство на поле сражения.
+                            В этом мире магии и стратегии каждый игрок вступает в роль могущественного героя, обладающего уникальными способностями и навыками.</p>
+                        <p class="info_dota two">В самом центре <span class="dota_gradient">"Dota 2"</span> лежит принцип командной игры, где две команды, состоящие из пяти игроков в каждой, сражаются за контроль над картой.
+                            Цель состоит в разрушении вражеской крепости, называемой <span class="blue_gradient_dota">"Ancient"</span>, расположенной на базе противника.</p>
+                        <p class="info_dota three">Каждый игрок выбирает своего героя из более чем сотни разнообразных персонажей, каждый из которых обладает уникальными способностями, стилем игры и ролью на поле боя. Некоторые герои способны наносить огромный урон в ближнем бою, другие умело управляют магией и могут поддерживать своих товарищей, а третьи специализируются на стратегических атаках и контроле над игровым пространством.</p>
+                        <p class="info_dota foor">В течение игры игроки сражаются за контроль над ресурсами, выполняют задания, улучшают своего героя, приобретают предметы и сражаются с вражеской командой в напряженных схватках. Стратегия, коммуникация и быстрые реакции — вот ключевые элементы успеха в <span class="dota_gradient">"Dota 2"</span>.</p>
+                        <p class="info_dota fair"><span class="dota_gradient">"Dota 2"</span> не просто игра, это целый мир, в котором каждый матч приносит новые вызовы, стратегии и эмоции. От захватывающих моментов в битвах до сложных тактических решений, <span class="dota_gradient">"Dota 2"</span> предлагает игрокам бесконечные возможности для развития и развлечения в мире, где мастерство и соревнование вечны.</p>
+                    </div>
+
+                    <div class="listOne">
+                        <p class="info_dota fair">
+                            <span class="dota_gradient">Dota 2</span> является комбинацией RTS и RPG. Игроки делятся на две конкурирующие команды (силы Света и силы Тьмы), каждая из которых содержит до пяти игроков. Главной целью игры является уничтожение вражеского Древнего и защита своего. Древних защищают по три башни на каждой стороне. Каждый игрок управляет героем, стратегически мощной единицей с уникальными способностями и характеристиками, улучшаемыми со временем. Герой может получать опыт для повышения своего уровня, зарабатывать золото, покупать и собирать предметы, которые усиливают его. Каждый игрок постоянно получает небольшое количество золота, а также зарабатывает его убийством крипов, героев и разрушением строений.
+                            В <span class="dota_gradient">Dota 2</span> сделан сильный упор на тактику и командную работу, а стратегия зачастую завязана на скоростном наборе мощности, оптимальном выборе предметов и порядке улучшения способностей.
+                        </p>
+                    </div>
+
+                    <div class="listTwo">
+                        <div class="animatShester">
+                            <svg id="shestOne" width="20%" viewBox="0 0 16 16">
+                                <path d="M15.2 6l-1.1-0.2c-0.1-0.2-0.1-0.4-0.2-0.6l0.6-0.9 0.5-0.7-2.6-2.6-0.7 0.5-0.9 0.6c-0.2-0.1-0.4-0.1-0.6-0.2l-0.2-1.1-0.2-0.8h-3.6l-0.2 0.8-0.2 1.1c-0.2 0.1-0.4 0.1-0.6 0.2l-0.9-0.6-0.7-0.4-2.5 2.5 0.5 0.7 0.6 0.9c-0.2 0.2-0.2 0.4-0.3 0.6l-1.1 0.2-0.8 0.2v3.6l0.8 0.2 1.1 0.2c0.1 0.2 0.1 0.4 0.2 0.6l-0.6 0.9-0.5 0.7 2.6 2.6 0.7-0.5 0.9-0.6c0.2 0.1 0.4 0.1 0.6 0.2l0.2 1.1 0.2 0.8h3.6l0.2-0.8 0.2-1.1c0.2-0.1 0.4-0.1 0.6-0.2l0.9 0.6 0.7 0.5 2.6-2.6-0.5-0.7-0.6-0.9c0.1-0.2 0.2-0.4 0.2-0.6l1.1-0.2 0.8-0.2v-3.6l-0.8-0.2zM15 9l-1.7 0.3c-0.1 0.5-0.3 1-0.6 1.5l0.9 1.4-1.4 1.4-1.4-0.9c-0.5 0.3-1 0.5-1.5 0.6l-0.3 1.7h-2l-0.3-1.7c-0.5-0.1-1-0.3-1.5-0.6l-1.4 0.9-1.4-1.4 0.9-1.4c-0.3-0.5-0.5-1-0.6-1.5l-1.7-0.3v-2l1.7-0.3c0.1-0.5 0.3-1 0.6-1.5l-1-1.4 1.4-1.4 1.4 0.9c0.5-0.3 1-0.5 1.5-0.6l0.4-1.7h2l0.3 1.7c0.5 0.1 1 0.3 1.5 0.6l1.4-0.9 1.4 1.4-0.9 1.4c0.3 0.5 0.5 1 0.6 1.5l1.7 0.3v2z"></path>
+                                <path d="M8 4.5c-1.9 0-3.5 1.6-3.5 3.5s1.6 3.5 3.5 3.5 3.5-1.6 3.5-3.5c0-1.9-1.6-3.5-3.5-3.5zM8 10.5c-1.4 0-2.5-1.1-2.5-2.5s1.1-2.5 2.5-2.5 2.5 1.1 2.5 2.5c0 1.4-1.1 2.5-2.5 2.5z"></path>
+                            </svg>
+                            <svg id='shestTwo' width="10%" viewBox="0 0 16 16">
+                                <path d="M15.2 6l-1.1-0.2c-0.1-0.2-0.1-0.4-0.2-0.6l0.6-0.9 0.5-0.7-2.6-2.6-0.7 0.5-0.9 0.6c-0.2-0.1-0.4-0.1-0.6-0.2l-0.2-1.1-0.2-0.8h-3.6l-0.2 0.8-0.2 1.1c-0.2 0.1-0.4 0.1-0.6 0.2l-0.9-0.6-0.7-0.4-2.5 2.5 0.5 0.7 0.6 0.9c-0.2 0.2-0.2 0.4-0.3 0.6l-1.1 0.2-0.8 0.2v3.6l0.8 0.2 1.1 0.2c0.1 0.2 0.1 0.4 0.2 0.6l-0.6 0.9-0.5 0.7 2.6 2.6 0.7-0.5 0.9-0.6c0.2 0.1 0.4 0.1 0.6 0.2l0.2 1.1 0.2 0.8h3.6l0.2-0.8 0.2-1.1c0.2-0.1 0.4-0.1 0.6-0.2l0.9 0.6 0.7 0.5 2.6-2.6-0.5-0.7-0.6-0.9c0.1-0.2 0.2-0.4 0.2-0.6l1.1-0.2 0.8-0.2v-3.6l-0.8-0.2zM15 9l-1.7 0.3c-0.1 0.5-0.3 1-0.6 1.5l0.9 1.4-1.4 1.4-1.4-0.9c-0.5 0.3-1 0.5-1.5 0.6l-0.3 1.7h-2l-0.3-1.7c-0.5-0.1-1-0.3-1.5-0.6l-1.4 0.9-1.4-1.4 0.9-1.4c-0.3-0.5-0.5-1-0.6-1.5l-1.7-0.3v-2l1.7-0.3c0.1-0.5 0.3-1 0.6-1.5l-1-1.4 1.4-1.4 1.4 0.9c0.5-0.3 1-0.5 1.5-0.6l0.4-1.7h2l0.3 1.7c0.5 0.1 1 0.3 1.5 0.6l1.4-0.9 1.4 1.4-0.9 1.4c0.3 0.5 0.5 1 0.6 1.5l1.7 0.3v2z"></path>
+                                <path d="M8 4.5c-1.9 0-3.5 1.6-3.5 3.5s1.6 3.5 3.5 3.5 3.5-1.6 3.5-3.5c0-1.9-1.6-3.5-3.5-3.5zM8 10.5c-1.4 0-2.5-1.1-2.5-2.5s1.1-2.5 2.5-2.5 2.5 1.1 2.5 2.5c0 1.4-1.1 2.5-2.5 2.5z"></path>
+                            </svg>
+                        </div>
+                        <p class="info_dota fair">
+                            <span class="ice_frog">IceFrog</span>, ведущий разработчик оригинальной <span class="dota_gradient">Defense of the Ancients</span>, был нанят Valve Software в 2009 году.
+                            Бета-тест начался в 2010 году, а официально завершился в июле 2013 года сразу после The International 2013, когда клиент для Windows был официально выпущен с внедрённой системой очередей. Клиенты для Mac и Linux были выпущены неделю спустя. <span class="dota_gradient">Dota 2</span> работает на движке Source 2 и повторяет некоторые мелкие детали из оригинальной <span class="dota_gradient">DotA</span> для сохранения игрового процесса.
+                        </p>
+                    </div>
+
+                    <div class="listThree">
+                        <p class="info_dota fair">
+                            Карта — игровое поле всех матчей Dota 2. Оно состоит из двух сторон, одну из которых занимают Radiant icon Силы Света, а другую — Dire icon Силы Тьмы. Для победы игроки должны уничтожить вражеского Древнего, важное здание в центре баз каждой из команд. Карта дублируется в интерфейсе мини-картой. Также важно знать, что в игре лишь одна карта, но пользовательские игры могут использовать карты, созданные сообществом.
+                        </p>
+                    </div>
+
+                    <div class="listFor">
+                        <p class="info_dota fair">
+                            Все герои — уникальные персонажи в Dota 2. В начале каждой игры игроки делятся на две команды по пять человек, а затем выбирают героя. Каждый игрок контролирует своего героя и подконтрольных существ (например, нейтральных крипов под действием Holy Persuasion icon Holy Persuasion).
+                            Герой получает опыт, когда недалеко от него убивают вражеское существо. Все герои начинают игру на первом уровне и, получая опыт, повышают его. С каждым новым уровнем у героя увеличиваются атрибуты и изучаются новые способности.                      
+                            Герои разделены на три категории: Strength attribute symbol Сила, Agility attribute symbol Ловкость и Intelligence attribute symbol Интеллект.             
+                        </p>
+                    </div>
                     
-                    <p class="info_dota fair">
-                        <span class="ice_frog">IceFrog</span>, ведущий разработчик оригинальной <span class="dota_gradient">Defense of the Ancients</span>, был нанят Valve Software в 2009 году.
-                        Бета-тест начался в 2010 году, а официально завершился в июле 2013 года сразу после The International 2013, когда клиент для Windows был официально выпущен с внедрённой системой очередей. Клиенты для Mac и Linux были выпущены неделю спустя. <span class="dota_gradient">Dota 2</span> работает на движке Source 2 и повторяет некоторые мелкие детали из оригинальной <span class="dota_gradient">DotA</span> для сохранения игрового процесса.
-                    </p>
-                </div>
-                <div class="listThree">
-                    <p class="info_dota fair">
-                        Карта — игровое поле всех матчей Dota 2. Оно состоит из двух сторон, одну из которых занимают Radiant icon Силы Света, а другую — Dire icon Силы Тьмы. Для победы игроки должны уничтожить вражеского Древнего, важное здание в центре баз каждой из команд. Карта дублируется в интерфейсе мини-картой. Также важно знать, что в игре лишь одна карта, но пользовательские игры могут использовать карты, созданные сообществом.
-                    </p>
-                </div>
-                <div class="listFor">
-                    <p class="info_dota fair">
-                        Все герои — уникальные персонажи в Dota 2. В начале каждой игры игроки делятся на две команды по пять человек, а затем выбирают героя. Каждый игрок контролирует своего героя и подконтрольных существ (например, нейтральных крипов под действием Holy Persuasion icon Holy Persuasion).
-                        Герой получает опыт, когда недалеко от него убивают вражеское существо. Все герои начинают игру на первом уровне и, получая опыт, повышают его. С каждым новым уровнем у героя увеличиваются атрибуты и изучаются новые способности.                      
-                        Герои разделены на три категории: Strength attribute symbol Сила, Agility attribute symbol Ловкость и Intelligence attribute symbol Интеллект.             
-                    </p>
                 </div>
             </div>
         </div>
     </div> 
 </div>
 
-<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, eaque officiis laboriosam itaque sint aspernatur enim aliquam magni exercitationem placeat expedita unde ipsa molestiae harum voluptas tenetur sed maiores. Accusantium.
-Repellendus illum necessitatibus fugit rem perspiciatis esse, consequuntur velit maiores deleniti, perferendis, officia vero nobis quam nulla dolorum temporibus. In eius praesentium incidunt, dicta perferendis quibusdam hic. Consectetur, aliquid id.
-Sit quaerat quibusdam sed deserunt veniam alias dolorum voluptatum id similique fugit, accusamus fugiat consequatur dolore explicabo atque adipisci esse sequi repudiandae. Eligendi quasi fugiat optio perferendis magnam voluptates quibusdam!
-Adipisci voluptatibus molestias exercitationem molestiae! Repudiandae pariatur deserunt repellendus in animi fugiat, perferendis, cupiditate nobis laborum maxime alias explicabo hic porro, iste non. Dolor vero consequuntur modi molestiae, velit maxime?
-Reprehenderit eligendi obcaecati debitis, vero enim, quidem molestiae possimus facilis magnam voluptatum aliquid itaque aliquam at atque inventore mollitia est ut consectetur dolor! Amet earum illo maxime est asperiores sequi!
-Debitis repellat reprehenderit expedita non sequi illum inventore voluptates magni hic, odit, nihil, consectetur tempora dolorum ut? Delectus sequi ipsa culpa dolorem! Possimus aliquam at quisquam quidem nihil optio veniam!
-Ad molestiae accusamus, aspernatur dolor similique, obcaecati, odit cumque iusto labore dolore quidem aliquid debitis voluptatem. Ad minima dolorum nam est veritatis maiores vel quo, velit aspernatur fugit dignissimos quis.
-Natus velit nihil consequatur possimus officia. Nisi facilis incidunt molestias ipsum ad rem ea atque cumque accusamus nostrum? Harum, obcaecati minima adipisci accusantium fugit error veritatis dicta officia quae nulla?
-Suscipit reiciendis architecto dolor illum amet similique, sequi tempora veniam qui. Corrupti dignissimos dolor maxime vero eum earum molestias iusto natus, atque cupiditate, voluptatibus accusamus exercitationem minus fugiat aspernatur unde.
-Iure, dolor veritatis et quasi ipsam voluptatum nemo, excepturi quos corrupti provident eligendi magni rem magnam minus commodi. Esse, unde sed! Quod recusandae eveniet voluptates perspiciatis modi nesciunt quis animi!
-Autem vero quod iste at officiis consequatur modi quae voluptas delectus debitis nam optio expedita sint nulla iusto facilis perferendis placeat eum, cupiditate sunt sit consectetur alias? Quis, vel id.
-Consequatur at porro quis fugit magnam! Quo, optio eaque. Aut, sapiente eveniet enim ipsa omnis reprehenderit at possimus pariatur necessitatibus eaque itaque exercitationem dolore debitis assumenda! Debitis facere culpa quos!
-Aut sapiente porro tenetur suscipit quod harum recusandae doloribus soluta, quos fugit adipisci architecto magni aliquid explicabo numquam sunt repellat? Esse soluta nulla, cumque alias veritatis eius nesciunt sint fuga.
-At animi expedita assumenda enim distinctio possimus iure eius perspiciatis provident tempore minus, consequatur explicabo eaque nobis ab odio? Dicta quaerat debitis similique unde magnam veniam reiciendis corrupti, iure iste?
-Eos architecto ipsam hic nostrum dolores iusto. Cupiditate totam ducimus ad iste earum eos exercitationem ab doloremque, suscipit, quae omnis repudiandae error repellendus consequatur fugit deleniti, corporis mollitia recusandae reprehenderit.
-Optio sunt incidunt cumque voluptatum, quae quis odit unde sit eaque rerum velit tempora dignissimos earum dolorum corporis? Repudiandae minus sapiente modi, suscipit magnam ducimus officia hic non debitis blanditiis?
-Veniam praesentium, eius facilis nihil eaque explicabo animi odio numquam officiis qui suscipit consectetur in cumque eveniet minima facere? Illo, quidem facere! Culpa quos laboriosam adipisci quaerat, veritatis est cumque.
-Nisi fugiat cum ducimus molestias laborum officia veritatis itaque soluta nulla eius obcaecati consequuntur laboriosam, vel incidunt necessitatibus excepturi numquam ratione quas illo quia. Hic aliquam iste error laborum quam?
-Architecto, ratione earum. Maxime corporis in nemo? Cupiditate quam possimus reiciendis magnam. Non pariatur soluta impedit in officiis aut distinctio necessitatibus aspernatur magni, repudiandae, voluptas porro unde corrupti nesciunt ab!
-Quos dignissimos cum est ea, perferendis sequi, earum tempore, aliquam esse saepe recusandae. Repudiandae earum soluta, voluptates maxime magni, placeat necessitatibus asperiores, pariatur neque architecto optio eveniet aut nobis mollitia.
-Obcaecati molestiae enim cum ullam tempore reprehenderit beatae, hic eum quia quam voluptates error, est minus eligendi quis a provident quas unde excepturi odio veritatis. Accusamus tempore obcaecati veniam deserunt.
-Laboriosam dignissimos commodi sequi alias eligendi? Sequi recusandae nulla odio, atque praesentium, quo et voluptates dolorem reiciendis aliquid dignissimos, veritatis deserunt. Atque aliquam at iusto molestiae consectetur suscipit ea officia.
-Molestias quod impedit ipsum nemo illo reiciendis vel assumenda laudantium, odit dolor fugiat nihil sed eveniet ducimus necessitatibus culpa sint hic animi nesciunt sunt molestiae enim itaque? Blanditiis, voluptatem voluptas.
-In, velit obcaecati voluptatum laborum deleniti voluptatibus amet omnis quia quae consequuntur, neque recusandae aliquid debitis id vel illo ullam laudantium ad impedit. Sit animi nesciunt voluptate aut. Molestias, ducimus?
-Eius corrupti ut soluta nisi minima inventore ducimus sed modi iusto maiores ullam neque commodi, vitae, quasi explicabo porro saepe quo. Ducimus, modi. Accusantium dicta totam eligendi quis praesentium. Adipisci.
-Voluptatem, voluptatibus maiores tempore omnis quas quidem eos cum neque, magni ipsam earum totam fugiat placeat optio? Debitis fugiat placeat repellat mollitia accusamus dolor vitae! Incidunt molestias recusandae excepturi quasi!
-Asperiores reiciendis dolorem quaerat ut quidem, aut sapiente dicta consequatur obcaecati debitis quisquam placeat iusto, natus at repellat sunt in rem omnis, eaque porro. Doloremque, nobis? Aut, qui dignissimos. Odio.
-Sequi eos sapiente explicabo, perspiciatis quidem amet aliquam sunt illum eum minima laudantium rem perferendis quasi numquam assumenda qui laboriosam facere obcaecati molestiae hic. Sapiente ipsa ipsum consequatur! Sit, natus.
-Sit, officia! Accusamus laboriosam earum voluptatem quaerat dolores nam corrupti ullam hic quos praesentium facilis porro quas, rem perferendis vel, corporis nulla saepe reprehenderit ratione facere optio culpa sed doloribus?
-Molestias, commodi. Sint provident ad quibusdam illo quasi explicabo asperiores, aut commodi ea reprehenderit quo placeat assumenda dolorum quaerat, voluptatum fuga quae. Temporibus quibusdam obcaecati sed quo, ut dolore eius!
-Eius voluptate incidunt debitis alias voluptas temporibus, magni delectus quisquam dolorum officiis maiores vel autem minima obcaecati ratione, ipsam sint vero iste facilis nisi soluta neque ad. Error, nostrum est.
-Obcaecati eius magnam culpa in explicabo nihil, magni vel eum accusamus quasi possimus, molestias aperiam eveniet. Aut nostrum impedit, alias inventore blanditiis aperiam laudantium quam reprehenderit neque veritatis officiis quibusdam?
-Ipsum placeat quidem, optio cupiditate consequuntur sequi fugit doloremque magnam itaque adipisci nesciunt tenetur tempora excepturi architecto nisi quod aperiam, aliquam perspiciatis aut atque impedit voluptates eius quasi ex. Sunt.
-Quasi est hic aut id labore totam sint, enim laudantium numquam esse eaque quibusdam maiores quae ipsa, aspernatur consequatur! Cumque exercitationem nemo minus dignissimos molestias voluptatem hic magnam, voluptate voluptatibus.
-Molestias vitae, quasi ducimus repellendus et sunt ea dolor eveniet hic culpa praesentium obcaecati iure animi expedita aliquid possimus quaerat atque ipsa provident a quidem voluptate tempore suscipit. Minus, aut.
-Sequi voluptates possimus voluptas quidem distinctio cupiditate aliquid? Laudantium, cumque suscipit ipsam est adipisci iste ut labore tempore commodi provident dolores aliquid laboriosam exercitationem, facere autem ducimus sapiente cupiditate quaerat.
-Odit doloribus quam quisquam velit exercitationem magnam harum tenetur distinctio perspiciatis sit corporis rem quidem est, eligendi eius dolores veniam consequuntur fugiat voluptate blanditiis suscipit? Incidunt facere debitis distinctio! Accusantium.
-Explicabo dolore officia beatae earum assumenda quasi voluptatum aut deleniti! Ea officia quos perferendis? Odio iure suscipit soluta voluptatum eaque quasi! Ipsa mollitia quisquam iste dolore nemo quasi saepe praesentium.
-Totam veritatis quis velit. Possimus excepturi fugit aliquam! Veniam ab nisi esse nihil, hic, similique porro, expedita dolorem officiis nostrum corporis ex optio unde. Excepturi maiores laboriosam dignissimos dolorum ullam.
-Numquam animi dicta veniam sint vitae reprehenderit voluptate quibusdam mollitia sapiente minus! Id animi error repellat sapiente ducimus eligendi expedita numquam tempora iure, at aliquam eius nihil dicta aperiam saepe.
-Corrupti earum autem reiciendis sequi provident laudantium sint vitae. At temporibus, doloremque consequatur veniam aliquam eum quis voluptas et asperiores excepturi laudantium aperiam tempora. Obcaecati culpa facilis vitae enim recusandae?
-Quos eius ducimus, voluptatibus facere ipsum eveniet quaerat dicta sint at id tempore nisi impedit architecto aperiam. Placeat sapiente laboriosam saepe voluptates hic tenetur deleniti asperiores voluptatem unde quaerat! Inventore.
-Illum enim nulla eaque perspiciatis nesciunt accusamus recusandae rerum alias? Earum odit minus adipisci nisi hic saepe maxime voluptate, quas veniam voluptatem quia accusantium magni nostrum possimus quo impedit animi!
-Hic explicabo mollitia vitae suscipit, amet enim, consequuntur inventore animi blanditiis similique fugit? Non placeat veniam velit beatae, provident praesentium ducimus, aut facilis at molestias, vitae aliquid deserunt sequi quibusdam!
-Dolore aspernatur quia reprehenderit ipsam necessitatibus labore numquam culpa quae, qui vitae dolorum, pariatur suscipit voluptatibus nisi quaerat, eveniet non nesciunt! Cupiditate ipsum reprehenderit perspiciatis illo facere. Nulla, ratione vel.
-Quis aut ex officia, id molestias omnis consectetur perferendis minus doloribus voluptates consequuntur distinctio eos placeat beatae neque unde mollitia quibusdam illo quas sequi aspernatur consequatur laboriosam sunt. Aspernatur, dignissimos.
-At est earum libero totam nulla itaque optio ratione rerum, velit doloribus, sapiente provident dolore suscipit necessitatibus nesciunt hic. Recusandae, nemo magni vitae fugiat molestiae delectus nihil labore amet illo?
-Hic, nulla repudiandae reprehenderit expedita optio praesentium commodi impedit earum esse quam, dolores adipisci quo perferendis magnam officia nobis corrupti doloremque inventore nostrum assumenda beatae accusantium rerum officiis? Laborum, at!
-Enim dolores, tempore dignissimos, consequatur odit et similique laudantium illum veritatis veniam totam. Saepe culpa recusandae maiores tempora quisquam odit eligendi, nulla, doloremque rem eaque vitae, asperiores alias numquam. Enim.
-Facere ullam quas ut ratione totam earum nemo reprehenderit aut, incidunt nisi consequuntur fugiat maiores, nulla sint sed repudiandae, rem cupiditate! Minus obcaecati necessitatibus similique laborum numquam, placeat atque possimus?
-Ducimus vel sunt labore, repudiandae unde accusantium! Cupiditate nobis ipsum ullam esse ea aperiam similique perferendis excepturi accusantium consequatur voluptas, hic delectus odit dolore dolorum recusandae blanditiis quod? Porro, veniam.
-Dolore nesciunt impedit, totam necessitatibus libero laboriosam corrupti? Perspiciatis maiores, tenetur laudantium illo est fugiat eligendi incidunt voluptatibus reiciendis nam velit nemo repudiandae voluptas ipsam voluptatem obcaecati beatae veritatis quas.
-Ea ipsum possimus, exercitationem sit rem impedit magnam numquam harum minima aliquam veritatis veniam. Doloremque nihil ratione non repellat esse similique quasi ullam praesentium quo exercitationem, sapiente magni ipsum dolorum.
-Facere, dicta esse. Cupiditate eum velit numquam aut maxime soluta, hic rerum, ipsum suscipit neque voluptates iure praesentium odio, magnam autem voluptas labore alias nam unde facilis quam quidem. Labore!
-Nesciunt possimus perspiciatis placeat tempora ullam unde, tenetur provident. Minus obcaecati in commodi, officia cum quae beatae quaerat veritatis cupiditate sit quia dolore aperiam dolorum maxime ex enim laboriosam ab?
-Nesciunt minima minus rem delectus adipisci maiores ex fugit quae cupiditate sapiente tempore consequuntur iusto commodi labore hic voluptatem voluptas sequi ut error, qui, consectetur eligendi blanditiis. Nulla, minima ipsa?
-Blanditiis aliquam aliquid provident aspernatur veniam dignissimos cum laudantium inventore minus consectetur vel totam cupiditate, nulla ex corrupti? Praesentium id itaque ut dicta quidem ipsa suscipit, neque quae quo consequatur?
-Culpa consectetur iste repudiandae modi temporibus quod, labore facilis non quam maxime amet cum ipsa fugit a. Suscipit, animi neque dolorum, deserunt tempore quam fugiat reiciendis quo magnam alias rerum.
-Voluptatum reiciendis labore facere quaerat quas vitae, aperiam nihil nisi, corrupti veniam blanditiis officia maiores voluptates voluptas sequi porro debitis nobis ipsam rerum sunt alias. Voluptas ea explicabo perferendis ullam.
-Ad ullam illum ab, unde quam alias officiis debitis porro expedita nostrum, nihil fugit vero! Minima suscipit sit, quos ullam dolorum distinctio. Ipsam consequatur earum nostrum enim dolorum voluptates praesentium.
-Cumque delectus similique officiis eligendi repellendus vero quo alias at saepe! Hic sunt illum ducimus, distinctio obcaecati accusamus accusantium vero voluptas architecto doloribus labore? Corporis eos alias veniam nulla quas.
-Iure facere inventore rem. Eos alias optio veritatis facere, aliquid molestiae laborum quisquam molestias velit ipsam exercitationem sequi unde? Et aspernatur laudantium numquam nemo aliquid illo vitae amet voluptatum rem.
-Fuga nobis, quisquam ut odit corrupti nemo quod deserunt optio ipsa illum illo ea iusto totam voluptatum provident placeat cum a exercitationem soluta perspiciatis architecto numquam sunt nam. A, temporibus.
-Veniam facere cupiditate quasi tempore repellat alias nemo explicabo iure, repudiandae perferendis fuga delectus? Aut aperiam sint quam unde? Eaque itaque ad odio, beatae fugit ut deleniti corporis numquam consequuntur?
-Numquam ipsam vero, voluptate, nihil, veritatis non provident hic ut magnam mollitia minima. Quibusdam rerum deserunt dolorem, molestias praesentium minima laboriosam fuga vitae. Quam nulla repudiandae dolor tempora voluptates laudantium?
-Saepe ipsum sed repudiandae earum sunt dolor, at ipsa rerum sint eligendi perferendis. Dicta mollitia minus sapiente, quisquam voluptas eveniet reprehenderit, non est consequuntur perspiciatis ex sequi pariatur aspernatur ut!
-Voluptatum natus hic porro voluptas aspernatur explicabo quas possimus, ratione libero quis dolores aut atque laboriosam accusamus! Totam dolor animi rerum excepturi expedita voluptatem illo in, suscipit porro, perspiciatis minima.
-Cum excepturi, blanditiis maxime eum omnis ipsa expedita neque unde perferendis maiores, ab asperiores atque tenetur rem ratione eligendi reprehenderit mollitia? Veniam esse necessitatibus vero, in perferendis eius expedita dignissimos.
-Cupiditate vero doloribus aliquam, autem esse porro sed nostrum dolorem iusto velit ipsum maiores ea, corporis libero dolor, omnis ipsam exercitationem quod. Dolore sequi at, nostrum eos ad expedita est.
-Minus eos voluptatum officiis tenetur provident aut eveniet hic accusantium. Numquam dolorum amet ab iste, iure harum suscipit est corrupti natus earum totam tenetur minus enim consequatur animi non? Quasi!
-Perspiciatis possimus non praesentium? Adipisci quia nisi blanditiis ex numquam expedita modi autem facere consequuntur dolor sequi voluptas ad rerum laudantium ducimus, deleniti repellat fuga voluptate vitae quo, natus sint.
-Facere voluptas totam adipisci impedit quod soluta, eum laboriosam nobis odio perferendis fugiat amet aspernatur! Possimus, magnam? Distinctio omnis pariatur laudantium molestias asperiores mollitia, alias beatae porro, hic illum velit.
-Incidunt cupiditate est, quisquam vero harum veniam maiores adipisci debitis. Quod suscipit, repudiandae iusto eaque odit labore ullam, quis dolor accusantium aspernatur aliquam facilis qui voluptates sed est sequi beatae.
-Libero accusamus itaque modi nam architecto voluptates necessitatibus non sapiente odit corporis distinctio temporibus, neque consequuntur ad nobis dignissimos assumenda fugit et vitae illo ullam deleniti ab? Quaerat, fugit dolores!
-Suscipit dignissimos illum nisi, ipsum, quibusdam vero a adipisci aspernatur facere architecto odit earum eius est, ea quam! Amet suscipit beatae nihil asperiores esse nisi quod similique aliquid ullam inventore!
-Aliquid repellendus ratione, ex corporis expedita quibusdam ut, atque nihil consectetur, obcaecati ducimus? Accusantium, officia harum quam voluptatem quis molestias doloribus aliquid consequuntur, laudantium expedita qui maiores sed, explicabo id.
-Explicabo dignissimos vitae dolor hic culpa porro earum adipisci? Nobis architecto cum quos itaque minus accusantium delectus veritatis modi, aspernatur voluptate porro ipsum? Perferendis adipisci facere vitae ullam mollitia similique.
-Officia corrupti tempora assumenda, modi repellat quas. Veniam pariatur assumenda nihil enim eum! Sint doloremque vero id laudantium tenetur quos at, quisquam dignissimos possimus atque. Natus suscipit tempore quas eius.
-Error iure autem eius voluptas sint nostrum, possimus quam accusamus labore cum harum est qui, fugit deserunt accusantium unde quisquam ea? Qui ipsa delectus aliquid sequi ipsam enim quam laborum?
-Neque, possimus aperiam iste eos expedita quidem, obcaecati voluptate cumque repudiandae placeat culpa libero quos. Quia aliquam vel nemo animi illo possimus. Sunt eos nemo eius molestiae, deserunt officia et!
-Impedit animi delectus voluptatum sit quo amet enim eius tenetur fugit commodi provident doloribus, explicabo esse architecto debitis quasi, laborum officia laboriosam velit at aliquid excepturi. Ratione veniam expedita dolorem.
-Labore molestiae nesciunt quos facere eligendi eaque suscipit quaerat iure laboriosam voluptatibus, facilis cupiditate asperiores vel accusamus obcaecati tempore rem. Maxime facere perspiciatis ullam ex, consequuntur quis reiciendis alias molestias.
-Omnis rerum iste voluptates cumque aspernatur quam saepe maiores veniam a minima placeat quia nam, ipsum ipsa deserunt numquam aliquid asperiores consequatur! Rem, a dicta. Dolorum sint soluta delectus error?
-Quod quo quaerat dolore quis exercitationem culpa porro accusantium hic unde velit itaque delectus, quia consequatur minus. Atque ipsa voluptates sit asperiores perspiciatis maiores ab, consequatur, veritatis, eos dicta quaerat!
-Hic ducimus non facere tempora explicabo molestiae maiores nostrum illum dolorem iusto! Voluptates rerum distinctio vitae in, harum ullam facilis delectus quisquam voluptatem possimus illum inventore neque sunt suscipit. Laborum?
-Impedit esse accusantium perspiciatis adipisci error nesciunt aliquam harum magni rerum commodi. Cum, nulla alias quas officia unde voluptates fugit rerum soluta expedita ex, corporis dolore, dolorem vero accusamus in!
-Suscipit voluptatum vero necessitatibus facere odit, obcaecati, adipisci tenetur consequuntur voluptas temporibus tempore totam natus at tempora sapiente veritatis similique quasi veniam explicabo praesentium perspiciatis, quo accusantium minima quis. Nobis.
-Eligendi iure magni, ex non quo nostrum voluptas vero possimus? Tempora ex dolorum, sint commodi eum similique alias repellendus, sit facere in facilis reiciendis culpa quasi qui. Facere, eaque numquam!
-Veritatis id, fuga sit ratione ut nesciunt ea ad officia, natus unde, doloremque tempore accusantium fugiat. Fugiat adipisci accusamus quae, illum consequatur obcaecati blanditiis repudiandae vero quod, quibusdam nisi possimus.
-Facere ut similique eligendi saepe quaerat quod ab quae tempore odio laborum. Debitis doloremque quasi cupiditate consequuntur exercitationem numquam ducimus. Cumque molestiae quas dolorum dignissimos accusantium placeat assumenda at quia?
-Voluptatum aperiam quisquam nulla deserunt molestiae, repellat magnam, est architecto facilis vero fugiat inventore id perferendis debitis assumenda! Dolor delectus voluptatum provident nemo nulla ipsum ullam quia illo dolorum voluptatem.
-Amet obcaecati, dolores iusto ipsam velit non autem quibusdam dignissimos placeat optio cupiditate rerum eos harum temporibus architecto perferendis enim tempore quisquam esse eveniet officia. Inventore quia temporibus odit rerum?
-Explicabo est blanditiis distinctio ducimus labore, placeat excepturi ratione dolorum odit reiciendis odio, animi cupiditate aut necessitatibus eveniet nobis hic voluptas. Praesentium unde recusandae itaque odit nostrum, vel iusto perferendis.
-Assumenda vero modi doloremque facere quos aut exercitationem distinctio veniam officia quas at dolorum velit neque, non esse eum voluptate aliquam nam consectetur dicta sunt qui rerum! Et, rem? Eaque.
-Vel ratione eum maxime. Illum provident vel possimus ad! Minus accusantium debitis perspiciatis quisquam, sunt est odit adipisci ad numquam quae, hic neque labore, laborum quia. Ullam voluptas velit dolore!
-Pariatur corrupti ad eius sint. Fugit incidunt nobis voluptate, ad, perferendis laudantium placeat tempore quos amet soluta in quas animi cupiditate ab, neque maxime libero alias ipsam asperiores nemo. Aperiam.
-Cum nulla perferendis quia tenetur adipisci voluptatibus deleniti odit optio, libero aliquam officia quibusdam! Autem voluptas quo asperiores enim eius quia dignissimos eos, illo voluptatibus? Eaque perferendis ratione nulla. Reiciendis!
-Fugiat, commodi dolorem? Maxime dolorem minus cumque nobis quo culpa eum explicabo, inventore minima totam similique iste, earum, commodi praesentium optio quod vel ullam consequuntur voluptatum harum. Facilis, voluptas officiis.
-Necessitatibus, eum maxime molestias nihil, velit neque iste error inventore tenetur magni blanditiis officiis ab, repellat dignissimos recusandae totam. Dolore, delectus tenetur. Tempore repellendus, explicabo natus sint perferendis expedita at.
-Nostrum, cum laboriosam sequi, qui, neque illum velit et quaerat reprehenderit voluptas ratione est autem earum repellendus explicabo dicta fugiat accusantium. Eos quaerat culpa soluta asperiores esse facilis quas voluptas!</div>
+<!-- сeмат веркстка? -->
+<div class="main">
+    <!-- блок с турнирами -->
+</div>
+
+<footer class="footer">
+<!-- блок футер  -->
+    <div class="game_contayner">
+        <div class="">
+            <div>
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+            </div>
+            <div>
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
+            <div>
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
+            <div>
+                <form>
+                    <label>Получить свежие новости </label>
+                    <input type="email" name="email">
+                    <button>Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<p>asfasf</p>
 <script src="./Dota2.js"></script>
+
 </body>
 </html>

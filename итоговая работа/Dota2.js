@@ -59,3 +59,23 @@ window.addEventListener('scroll', () => {
         }
     }
 })
+
+/////////////////описание дота 2/////////////////////
+const listLi = document.querySelectorAll('.listUl>li')
+const listInfo = document.querySelectorAll('.list_info_game>div')
+console.log(listLi);
+
+for (let i = 0; i < listLi.length; i++) {
+    listLi[i].addEventListener('click', (event) => {
+        const curentLi = event.target.dataset.id 
+        for (let i = 0; i < listInfo.length; i++) {
+            listLi[i].classList.remove('activeListGame')           
+        }
+        listLi[curentLi - 1].classList.add('activeListGame')
+    
+        for (let i = 0; i < listLi.length; i++) {
+            listInfo[i].classList.remove('activeListGame')        
+        }
+        listInfo[curentLi - 1].classList.add('activeListGame')
+    })
+}

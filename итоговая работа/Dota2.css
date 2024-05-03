@@ -458,13 +458,13 @@ head{
     justify-content: space-between;
     column-gap: 5px;
 }
-.game_contayner ul li {
+.listUl li {
     width: 100%;
     /* box-sizing: border-box; */
     padding: 10px 5px;
     font-size: 30px;
     font-weight: 900;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     text-align: center;
     align-content: center;
     cursor: pointer;
@@ -473,16 +473,11 @@ head{
 }
 .game_contayner ul li:hover{
     
-    border-bottom: 3px solid #e85654;
+    /* border-bottom: 3px solid #e85654; */
     box-shadow: 0px 3px 10px #e85654,
     inset 0 3px 50px #e85654;
 }
-/* .game_contayner ul li:nth-child(5) { */
-    
-    /* border-right: 1px solid white; */
-    /* background: rgb(235,72,36);
-    background: linear-gradient(357deg, rgba(235,72,36,1) 36%, rgba(178,31,24,1) 61%); */
-/* } */
+
 
 
 
@@ -501,7 +496,7 @@ head{
 }
 .info_dota{
     font-size: 23px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -509,6 +504,7 @@ head{
     color: #92796B;
     border-radius: 2px;
     border-bottom: 3px solid #e85654;
+    box-shadow: 3px 22px 35px -20px #e85654;
     padding: 10px;
 }
 .dota_gradient{             /*это спан nullList*/
@@ -529,20 +525,46 @@ head{
     color: transparent;
 }
 
-/* //////// game_proces/////// */
+/* ////////listOne game_proces/////// */
 .listOne{
     display: none;
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 20px;
     padding: 20px;
 }
+.listOneJS {
+    display: block;
+}
 
-/* ///////// gamedev /////// */
+/* /////////listtwo gamedev /////// */
 .listTwo{
-    /* display: none; */
+    display: none;
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 20px;
     padding: 20px;
+}
+.animatShester{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+#shestOne{
+    animation: shetLeft linear 3s infinite;
+    fill: white;
+    
+}
+#shestTwo{
+    align-self: flex-end;
+    fill: white;
+    animation: shestRigth linear 2s infinite;
+}
+@keyframes shetLeft {
+    0%{transform: rotate(0);}
+    100%{transform: rotate(360deg);}
+}
+@keyframes shestRigth {
+    0%{transform: rotate(0)}
+    100%{transform: rotate(-360deg)}
 }
 .ice_frog{
     font-size: 25px;
@@ -553,18 +575,39 @@ head{
     display: inline;
 }
 
-/* .listTwo img {
-    max-width: 550px;
-    margin: 0 auto;
-    border-radius: 20px;
-} */
  /* ///// map ///// */
  .listThree{
     display: none;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    padding: 20px;
  }
 
  /* ////// gold ///// */
  .listFor{
     display: none;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    padding: 20px;
  }
 
+ 
+ .listUl .activeListGame,
+ .activeListGame {
+    display: block;
+    background-color: rgba(87, 62, 62, 0.4);
+    color: #e85654c3;
+ }
+
+ /* ///////////main//////////// */
+ .main {
+   background-color: #92796B;
+   height: 100vh; 
+ }
+
+
+ /* /////// fuuter ////////// */
+ .footer {
+    height: 100vh;
+    background-color: #000000;
+ }

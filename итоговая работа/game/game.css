@@ -1,0 +1,202 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* cursor: ; */
+}
+body{
+    /* width: 100%; */
+    /* height: 100%; */
+}
+.general{
+    position: relative;
+    border: 3px dashed red;
+    /* width: 100%; */
+    /* height: 100%; */
+}
+.test{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .96);
+    z-index: 100;
+    /* position: fixed; */
+}
+.game {
+    max-width: 700px;
+    height: 500px;
+    /* margin: auto; */
+    border: 3px solid black;
+    background-color: rgb(202, 100, 100);
+}
+.block_game{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: inherit;
+}
+button {
+    padding: 10px 20px;
+    background-color: gray;
+    font-size: 17px;
+    font-weight: 900;
+    text-shadow: 3px 3px 10px  black;
+}
+
+/* block1 */
+/* /////input///// */
+.input_heroes{
+position: relative;
+display: flex;
+
+border: 1px solid yellow;
+}
+.input{
+    width: 100%;
+    font-size: 25px;
+    padding-right: 30px;
+
+}
+#search_svg{
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#search_svg:hover{
+    fill: red;
+}
+
+.block1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* svg */
+#info,
+#search_svg{
+    cursor: pointer;
+    width: 25px;
+    stroke-width: 2;
+}
+#info:hover{
+    fill: red;
+    transform: scale(1.5,1.5);
+}
+
+/* ////////list Heroes//////// */
+.item_herois{
+    position: relative;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.349);
+    border-radius: 10px;
+    min-width: 270px;
+}
+.item_herois:hover{
+    background-color: rgba(0, 0, 0, 0.639);
+    border: none;
+    color: aliceblue;
+    
+}
+.list_heroes p {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+
+}
+.list {
+    list-style-type: none;
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    transform:rotateX(90deg);
+    transform-origin: top;
+    opacity: 0;
+    transition: all .3s ease;
+    visibility: hidden;
+    color: black;
+    min-width: inherit;
+    
+}
+.item_herois:hover>.list{
+    transform:rotateX(0deg);
+    opacity: 1;
+    visibility: visible;   
+}
+.list li{
+    cursor: pointer;
+    padding: 5px 5px;
+    background-color: rgba(0, 0, 0, 0.459);
+    border-radius: 10px;
+    white-space: nowrap;
+}
+.list li:hover {
+    background-color: rgba(0, 0, 0, 0.639);
+    color: white;
+
+}
+.list li img{
+    vertical-align: middle;
+}
+
+/* /////gaymer///////// */
+.gaymer{
+    display: flex;
+    gap: 10px;
+}
+.user {
+border: 1px solid black;
+/* width: 50px; */
+flex-basis: 25%;
+}
+.user img,
+.bot img {
+    background-color: gray;
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+.block_out{
+    flex-basis: 50%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    
+}
+.okno_out,
+.count{
+    flex-basis:100%;
+    height: 49%;
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.return_user,
+.return_bot,
+.count_user,
+.count_bot{
+    font-size: 70px;
+    flex-basis: 49%;
+    height: 100%;
+    background-color: blue;
+}
+.count{
+    flex-basis:100%;
+    height: 49%;
+    background-color: rgb(166, 201, 84);
+}
+.bot{
+    flex-basis: 25%;
+    height:200px;
+    border: 1px solid black;
+
+}
+
+.btn_game{
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
