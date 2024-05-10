@@ -42,23 +42,23 @@ slidLeft.addEventListener('click', () => {
 // scroll=208
 
 // func при скроле блок поочередно выезжает из левого края и правого
-let img = document.querySelector('.logo_description')
-let r = document.querySelectorAll('.description_game p')
-console.log(r);
-console.log(img);
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 210) {
-        img.classList.add('logo_description_script')
-        for (let i = 0; i < r.length; i++) {
-            r[i].classList.add('logo_description_script')
-        }
-    } else {
-        img.classList.remove('logo_description_script')
-        for (let i = 0; i < r.length; i++) {
-            r[i].classList.remove('logo_description_script')
-        }
-    }
-})
+// let img = document.querySelector('.logo_description')
+// let r = document.querySelectorAll('.description_game p')
+// console.log(r);
+// console.log(img);
+// window.addEventListener('scroll', () => {
+//     if (window.scrollY > 210) {
+//         img.classList.add('logo_description_script')
+//         for (let i = 0; i < r.length; i++) {
+//             r[i].classList.add('logo_description_script')
+//         }
+//     } else {
+//         img.classList.remove('logo_description_script')
+//         for (let i = 0; i < r.length; i++) {
+//             r[i].classList.remove('logo_description_script')
+//         }
+//     }
+// })
 
 /////////////////описание дота 2/////////////////////
 const listLi = document.querySelectorAll('.listUl>li')
