@@ -65,7 +65,8 @@ body{
     z-index: 99998;
     display: grid;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
+    display: none;
     color: white;
     overflow-y: auto;
     /* visibility: hidden; */

@@ -427,23 +427,24 @@ head{
 
 /* /////////////////////////// basic */ 
 .block_img {
-   
-    max-height: 200px;
+    background-color: #000000;
+    height: 200px;
     overflow: hidden;
 }
 
 .block_game_info{
     width: 100%;
+    /* max-height: 130vh; */
     background: url(./img/bg_info_dota2.jpg) no-repeat;
-    background-size: cover;
-    
+    background-position: center center;
+    background-size: cover;  
     box-shadow: inset 40px 40px 40px black,
                   inset  -40px -100px 40px black;
-    /* border: 1px solid white; */
 }
 .block_game_opacity {
     background-color: #00000063;
-    min-height: 995px;
+    min-height: inherit;
+    padding-bottom: 50px;
     /* border: 1px solid rgb(64, 0, 255); */
 }
 .game_contayner{
@@ -601,10 +602,84 @@ head{
 
  /* ///////////main//////////// */
  .main {
-   background-color: #92796B;
-   height: 100vh; 
+   /* background-color: #92796B; */
+    background: url(img/turnir.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 100vh; 
+    box-shadow: inset 40px 40px 40px black,
+                  inset  -40px -100px 40px black;
+                  padding: 40px 0;
  }
+ .tyrnir{
+    /* padding: 20px 0; */
+ }
+ .tyrnir_titile{
+    font-size: 50px;
+    text-align: center;
+    border: 1px solid white;
+    /* padding: 40px 0; */
+ }
+ .turnir_list_block{
 
+ }
+.list_turnir {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.list_turnir li{
+    position: relative;
+    font-size: 30px;
+    border: 1px solid yellow;
+    /* padding: 40px 20px; */
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* max-width: 300px; */
+    min-height: 13vh;
+    align-content: center;
+    /* text-align: center; */
+    border-radius: 20px;
+    /* margin-bottom: 10px; */
+    padding-left: 25px;
+}
+.list_turnir li img {
+    display: inline;
+    vertical-align: text-bottom;
+    width: 35px;
+}
+
+.list_turnir li:nth-child(4) img{
+    width: 50px;
+    vertical-align: middle;
+}
+.inthern_info{
+    /* text-align: end; */
+    font-size: 15px;
+    position: absolute;
+    bottom: .5em;
+    right: 3em;
+    cursor: pointer;
+    animation: text_inthern 2s infinite linear;
+}
+
+@keyframes text_inthern {
+    0%{ color: white;}
+    50%{ color:#e85654;}
+    100%{color: #ffffff;}
+}
+.color{
+    display: inline;
+}
+/* .color:nth-child(1){
+color: red;
+}
+.color:nth-child(2){
+    color: rgb(255, 254, 254);
+}
+.color:nth-child(3){
+    color: rgb(13, 0, 255);
+}     */
 
  /* /////// fuuter ////////// */
  .footer {

@@ -79,3 +79,24 @@ for (let i = 0; i < listLi.length; i++) {
         listInfo[curentLi - 1].classList.add('activeListGame')
     })
 }
+
+
+// let a = document.querySelector('')
+// let b = a.textContent
+// console.log(b);
+
+let textEl = document.getElementById('dots_link') 
+let originalText = textEl.innerHTML 
+let count = 0
+let dots = 5 
+
+function updateText() {
+    if (count < dots) {
+        textEl.innerHTML += '.' 
+        count++
+    } else {
+        textEl.innerHTML = originalText 
+        count = 0
+    }
+}
+setInterval(updateText, 500);

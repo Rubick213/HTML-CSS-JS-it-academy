@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    /* color: white; */
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.header{
+    border: 3px solid red;
+    height: 80vh;
+    width: 100%;
+}
+.container{
+    background: url(./img/Rectangle\ 30.png) no-repeat;
+    background-size: cover;
+    height: inherit;
+    /* display: flex;
+    justify-content: space-between; */
+    width: 100%;
+}
+/* ///////////////////////////////////////////////////////////////// */
+.left-bar{
+    height: inherit;
+    border: 1px solid yellow;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
+}
+
+.top-bar,
+.center-bar,
+.bottom-bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.top-bar svg:nth-of-type(2){
+    cursor: pointer;
+    width: 50px;
+    border: 1px solid #B59571;
+}
+
+.center-bar svg{
+    cursor: pointer;
+    width: 90%;
+    border: 1px solid #B59571;
+}
+
+.bottom-bar a svg {
+    width: 50px;
+    border: 1px solid #B59571;
+}
+/* ///////////////////////////////////////////////////////////// */
+/* header_List */
+
+.header_List{
+    /* order: 3; */
+    border: 1px solid yellow;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.header_List ul {
+    list-style-type: none;
+}
+
+/* ////////////////////////////////////////////////////////////////// */
+/* text_header */
+.text_header{
+    color: white;
+    /* order: 2; */
+    align-self: end;
+    border: 1px solid yellow;
+    position: absolute;
+    bottom: 15em;
+    left: 10em;
+    max-width: 856px;
+    margin-right: 10px;
+    
+}
+.text_header p{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3em;
+    
+}

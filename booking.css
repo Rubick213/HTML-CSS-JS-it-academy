@@ -1,0 +1,89 @@
+body, p, nav, ul{
+  margin: 0;
+}
+
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+header {
+  background-image: linear-gradient(-120deg, #1A5276 , #2471A3 30%, gray);
+  color: aliceblue;
+}
+
+header p {
+  font-size: 4em;
+  margin-left: 30px;
+  padding-top: 5px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 2em;
+  padding: 20px 50px;
+}
+nav div {
+  padding: 5px 20px;
+}
+nav div a{
+  color: aliceblue;
+}
+.main {
+  display: flex;
+  margin-top: 20px;
+}
+.main .filters {
+  flex-basis: 200px;
+  flex-grow: 1;
+}
+.main .hotels{
+  flex-basis: 500px;
+  flex-grow: 5;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.main .hotels img {
+  width: 80%;
+}
+.card {
+  margin: 0 0 10px 0;
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid #1A5276;
+  border-radius: 10px;
+  flex: 0 0 30%;
+  text-align: left;
+}
+
+.block {
+  display: none;
+}
+
+.card img{
+  align-self: center;
+}
+
+.card p, .filters p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1A5276;
+}
+.filters {
+  font-size: 1.5em;
+  padding: 15px;
+}
+li::before {
+  content: '\203A';
+  margin-right: 10px;
+}
+

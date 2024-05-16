@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="booking.css">
+  <title>TopHotels</title>
+</head>
+<body>
+  <header>
+    <p>
+      TopHotels 
+    </p>
+    <nav>
+      <div>
+        <a href="#">Жилье</a>
+      </div>
+      <div>
+        <a href="#">Варианты досуга</a>
+        
+      </div>
+      <div>
+        <a href="#">Туры</a>
+      </div>
+      <div>
+        <a href="#">Контакты</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="main">
+    <div class="filters">
+      <p>Все фильтры</p>
+      <input type="checkbox" name="only-5">Только 5* <br>
+      <input type="checkbox" name="only-bel">Только в Беларуси<br>
+      <input type="checkbox" name="parking">С парковкой<br>
+      <input type="checkbox" name="pool">С бассейном<br>
+      <input type="checkbox" name="vacation">Дома для отпуска<br>
+    </div>
+    <div class="hotels">
+      <div class="card only-bel parking pool">
+        <p>Гостиница Беларусь</p>
+        <img src="images-20240510T180315Z-001/images/1.jpg" alt="">
+        <ul>
+          <li class="parking">Бесплатная парковка</li>
+          <li class="wifi">Бесплатный WiFi</li>
+          <li class="pool">Бассейн</li>
+          <li class="fitnes">Фитнес-центр</li>
+          <li class="food">Бесплатный завтрак</li>
+        </ul>
+      </div>
+      <div class="card only-5 only-bel parking">
+        <p>Минск Марриотт Отель</p>
+        <img src="images-20240510T180315Z-001/images/2.jpg" alt="">
+        <ul>
+          <li class="parking">Бесплатная парковка</li>
+          <li class="wifi">Бесплатный WiFi</li>
+          <li class="pool">Джакузи</li>
+          <li class="fitnes">Фитнес-центр</li>
+          <li class="food">Бар/лаунж</li>
+        </ul>
+      </div>
+      <div class="card only-bel">
+        <p>DoubleTree by Hilton Hotel Minsk</p>
+        <img src="images-20240510T180315Z-001/images/3.jpg" alt="">
+        <ul>
+          <li class="wifi">Бесплатный WiFi</li>
+          <li class="pool">Джакузи</li>
+          <li class="fitnes">Фитнес-центр</li>
+          <li class="food">Бар/лаунж</li>
+        </ul>
+      </div>
+      <div class="card only-5 parking pool">
+        <p>Отель Atlantis The Palm 5* - Дубаи</p>
+        <img src="images-20240510T180315Z-001/images/4.jpg" alt="">
+        <ul>
+          <li class="parking">Бесплатная парковка</li>
+          <li class="wifi">Бесплатный WiFi</li>
+          <li class="pool">Бассейн</li>
+          <li class="fitnes">Фитнес-центр</li>
+        </ul>
+      </div>
+      <div class="card only-5 parking pool">
+        <p> Burj Al Arab Jumeirah - Дубаи</p>
+        <img src="images-20240510T180315Z-001/images/5.webp" alt="">
+        <ul>
+          <li class="parking">Бесплатная парковка</li>
+          <li class="wifi">Бесплатный WiFi</li>
+          <li class="pool">Бассейн</li>
+          <li class="food">Кухня</li>
+         
+        </ul>
+      </div>
+      <div class="card only-bel">
+        <p> Усадьба Треугольный дом шалаш</p>
+        <img src="images-20240510T180315Z-001/images/6.jpg" alt="">
+        <ul>
+          <li class="parking">Бесплатная парковка</li>
+          <li class="food">Кухня</li>
+         
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <script >
+
+    let check = document.querySelector('input[name=only-5]')
+    let card = document.querySelectorAll('.card')
+    console.log(card);
+    // let check = document.querySelectorAll('input[type=checkbox]')
+    check.addEventListener('change', event => {
+      if (event.target.checked) {
+        card.forEach(el => {
+          el
+        })
+      }
+    })
+  </script>
+  
+</body>
+</html>
