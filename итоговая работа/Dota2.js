@@ -100,3 +100,34 @@ function updateText() {
     }
 }
 setInterval(updateText, 500);
+
+
+let text = document.querySelectorAll('.qwe')
+let test = document.querySelectorAll('.inthern_info')
+console.log();
+
+for (let i = 0; i < test.length; i++) {
+    test[i].addEventListener('click', () => {
+
+        for (let i = 0; i < test.length; i++) {
+            text[i].classList.remove('qwe2')
+            
+        }
+
+        if (!text[i].classList.contains('qwe2')) {
+            text[i].classList.add('qwe2')
+        } 
+        
+
+        // if (text[i].classList.contains('qwe2')) {
+        //     test[i].innerHTML = 'Свернуть'
+        // } else {
+        //     test[i].innerHTML = 'Развернуть...'
+        // }
+         
+    })
+}
+
+
+
+

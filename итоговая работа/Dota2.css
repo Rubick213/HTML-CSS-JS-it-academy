@@ -632,7 +632,7 @@ head{
     position: relative;
     font-size: 30px;
     border: 1px solid yellow;
-    /* padding: 40px 20px; */
+    padding: 40px 20px;
     font-weight: bold;
     background-color: rgba(0, 0, 0, 0.7);
     /* max-width: 300px; */
@@ -642,6 +642,7 @@ head{
     border-radius: 20px;
     /* margin-bottom: 10px; */
     padding-left: 25px;
+    padding-right: 25px;
 }
 .list_turnir li img {
     display: inline;
@@ -661,6 +662,20 @@ head{
     right: 3em;
     cursor: pointer;
     animation: text_inthern 2s infinite linear;
+    background-color: #e85654;
+}
+.inthern_info:hover{
+    text-decoration: underline;
+}
+.qwe{
+    max-height: 0;
+    opacity: 0;
+}
+.qwe2{
+    margin-top: 20px;
+    font-size: 20px;
+    max-height: inherit;
+    opacity: 1;
 }
 
 @keyframes text_inthern {
